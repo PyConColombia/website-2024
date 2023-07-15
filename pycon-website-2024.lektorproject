@@ -1,0 +1,30 @@
+[project]
+name = pycon-website-2024
+url = http://pycon.co
+url_style = absolute
+
+[alternatives.es]
+name = Español
+primary = yes
+locale = es
+
+[alternatives.en]
+name = English
+url_prefix = /en/
+locale = en
+
+[servers.develop]
+name = Develop
+enabled = yes
+default = yes
+target = ghpages+https://pyconcolombia/website-develop?cname=develop.pycon.co
+
+[servers.production]
+name = Production 2024
+enabled = yes
+target = ghpages+https://pyconcolombia/website-2024?cname=2024.pycon.co
+
+[servers.www]
+name = Production WWW
+enabled = yes
+target = ghpages+https://pyconcolombia/website-www?cname=www.pycon.co
