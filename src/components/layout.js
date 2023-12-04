@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 export default function Layout({ children }) {
   return (
@@ -6,5 +6,5 @@ export default function Layout({ children }) {
       <h1>Test</h1>
       {children}
     </div>
-  )
+  );
 }
