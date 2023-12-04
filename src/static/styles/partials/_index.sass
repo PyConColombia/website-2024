@@ -1,0 +1,83 @@
+@use "../variables"
+
+$duration: 10s
+
+@-webkit-keyframes ticker
+  0%
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+    visibility: visible
+
+  100%
+    -webkit-transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0)
+
+@keyframes ticker
+  0%
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+    visibility: visible
+
+  100%
+    -webkit-transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0)
+
+.alert-news
+  background: linear-gradient(90deg, #F4A3BE 49.93%, #F6D0DD 80.23%)
+  border-radius: 0
+  color: variables.$main-bg-color
+  margin: 0
+  padding: 15px 0 40px
+
+  .ticker-wrapper
+    box-sizing: content-box
+    overflow: hidden
+    padding-left: 100%
+    position: fixed
+    width: 100%
+
+    .ticker
+      display: inline-block
+      white-space: nowrap
+      padding-right: 100%
+      box-sizing: content-box
+
+      -webkit-animation-iteration-count: infinite
+      animation-iteration-count: infinite
+      -webkit-animation-timing-function: linear
+      animation-timing-function: linear
+      -webkit-animation-name: ticker
+      animation-name: ticker
+      -webkit-animation-duration: $duration
+      animation-duration: $duration
+
+#data
+  background-color: variables.$main-bg-color
+
+#index
+  background-color: variables.$main-bg-color
+  padding: 100px 0
+
+  .title-container
+    text-align: center
+
+    img
+      width: 100%
+
+    .title
+      color: white
+      font-size: 35px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+
+      .bold
+        font-weight: 600
+
+#proposals
+  border: 1px solid #000
+  background: linear-gradient(207deg, #FFE7F8 2.85%, #F4DCED 50.56%, #E07CC3 100%)
+
+#contact
+  border: 1px solid #000
+  background: linear-gradient(153deg, #D3C3ED 0.67%, #D3C3ED 46.7%, #EEE3FF 94.7%)

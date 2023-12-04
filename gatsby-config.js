@@ -1,10 +1,13 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+const { languages, defaultLanguage } = require('./languages');
+const siteUrl = 'https://2024.pycon.co';
+
 module.exports = {
   siteMetadata: {
     title: `pycon-colombia-2024`,
-    siteUrl: `https://2024.pycon.co`
+    siteUrl
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -13,6 +16,7 @@ module.exports = {
     'gatsby-plugin-mdx',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-root-import',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -48,6 +52,29 @@ module.exports = {
           customOptions: {
             fix: true,
             cache: true
+          }
+        }
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/locales`,
+        name: `locale`
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-react-i18next',
+      options: {
+        languages,
+        defaultLanguage,
+        siteUrl,
+        i18nextOptions: {
+          fallbackLng: defaultLanguage,
+          supportedLngs: languages,
+          defaultNS: 'common',
+          interpolation: {
+            escapeValue: false // not needed for react as it escapes by default
           }
         }
       }
