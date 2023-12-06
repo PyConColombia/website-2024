@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { graphql } from 'gatsby';
 
 import Layout from 'components/layout';

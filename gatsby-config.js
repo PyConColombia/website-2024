@@ -1,6 +1,7 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+const path = require('path');
 const { languages, defaultLanguage } = require('./languages');
 const siteUrl = 'https://2024.pycon.co';
 
@@ -21,7 +22,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './src/images/'
+        path: './src/static/images/'
       },
       __key: 'images'
     },
@@ -59,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/locales`,
+        path: path.join(__dirname, '/locales'),
         name: `locale`
       }
     },
@@ -77,6 +78,15 @@ module.exports = {
             escapeValue: false // not needed for react as it escapes by default
           }
         }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900`
+        ],
+        display: 'swap'
       }
     }
   ]
