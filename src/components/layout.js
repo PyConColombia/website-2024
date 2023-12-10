@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'static/styles/styles.sass';
 import AlertNews from './alert/News';
 import NavbarLayout from './NavbarLayout';
+import FooterLayout from './FooterLayout';
 
 const Layout = ({ children }) => {
   return (
@@ -12,6 +13,7 @@ const Layout = ({ children }) => {
       <AlertNews message="Early birds tickets on sale now!" />
       <NavbarLayout />
       {children}
+      <FooterLayout />
     </>
   );
 };

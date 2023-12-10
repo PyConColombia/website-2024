@@ -4,6 +4,9 @@ import { graphql } from 'gatsby';
 
 import Layout from 'components/layout';
 import Welcome from 'components/LandingPage/Welcome';
+import Technologies from '../components/LandingPage/Technologies';
+import Sponsors from '../components/LandingPage/Sponsors';
+import Contact from '../components/LandingPage/Contact';
 
 const IndexPage = () => {
   const { t } = useTranslation();
@@ -12,6 +15,9 @@ const IndexPage = () => {
     <Layout>
       <main>
         <Welcome />
+        <Technologies />
+        <Sponsors />
+        <Contact />
       </main>
     </Layout>
   );
@@ -19,7 +25,7 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>PyCon Colombia 2024</title>;
 
 export const query = graphql`
   query ($language: String!) {
