@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Sponsors = () => {
-  return (
-    <div>Sponsors</div>
-  )
-}
+  return <div>Sponsors</div>;
+};
 
-export default Sponsors
+export default Sponsors;
