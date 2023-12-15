@@ -7,6 +7,7 @@ import Welcome from 'components/LandingPage/Welcome';
 import Technologies from '../components/LandingPage/Technologies';
 import Sponsors from '../components/LandingPage/Sponsors';
 import Contact from '../components/LandingPage/Contact';
+import Speakers from '../components/LandingPage/Speakers';
 
 const IndexPage = () => {
   const { t } = useTranslation();
@@ -16,6 +17,7 @@ const IndexPage = () => {
       <main>
         <Welcome />
         <Technologies />
+        <Speakers />
         <Sponsors />
         <Contact />
       </main>

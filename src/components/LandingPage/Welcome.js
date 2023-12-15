@@ -41,10 +41,7 @@ const Welcome = () => {
                 <Col xs={12} md={4}></Col>
                 <Col xs={12} md={4}>
                   <div className="icons-container">
-                    <StaticImage
-                      src="../../static/images/welcome-icons.svg"
-                      alt="PyCon Colombia logo"
-                    />
+                    <StaticImage src="../../static/images/welcome-icons.svg" alt="Welcome Icons" />
                   </div>
                 </Col>
               </Row>
