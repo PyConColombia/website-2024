@@ -1,0 +1,58 @@
+{
+  "name": "pycon-colombia-2024",
+  "version": "1.0.0",
+  "private": true,
+  "description": "pycon-colombia-2024",
+  "author": "Alejandro E. Rendon",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "lint": "eslint --fix .",
+    "lint-only": "eslint ."
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mdx-js/react": "^3.0.0",
+    "babel-plugin-styled-components": "^2.1.4",
+    "bootstrap": "^5.3.2",
+    "gatsby": "^5.12.4",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-image": "^3.12.3",
+    "gatsby-plugin-mdx": "^5.12.3",
+    "gatsby-plugin-react-i18next": "^3.0.1",
+    "gatsby-plugin-sass": "^6.12.3",
+    "gatsby-plugin-sharp": "^5.12.3",
+    "gatsby-plugin-sitemap": "^6.12.3",
+    "gatsby-source-filesystem": "^5.12.1",
+    "gatsby-transformer-sharp": "^5.12.3",
+    "i18next": "^23.7.7",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.5.0",
+    "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "gatsby-plugin-prettier-eslint": "^1.0.6",
+    "gatsby-plugin-root-import": "^2.0.9",
+    "gh-pages": "^6.1.0",
+    "prettier": "^3.1.0"
+  }
+}
