@@ -4,10 +4,10 @@ import { graphql } from 'gatsby';
 
 import Layout from 'components/layout';
 import Welcome from 'components/LandingPage/Welcome';
-import Technologies from '../components/LandingPage/Technologies';
-import Sponsors from '../components/LandingPage/Sponsors';
+// import Technologies from '../components/LandingPage/Technologies';
+// import Sponsors from '../components/LandingPage/Sponsors';
 import Contact from '../components/LandingPage/Contact';
-import Speakers from '../components/LandingPage/Speakers';
+// import Speakers from '../components/LandingPage/Speakers';
 
 const IndexPage = () => {
   const { t } = useTranslation();
@@ -16,9 +16,9 @@ const IndexPage = () => {
     <Layout>
       <main>
         <Welcome />
-        <Technologies />
+        {/* <Technologies />
         <Speakers />
-        <Sponsors />
+        <Sponsors /> */}
         <Contact />
       </main>
     </Layout>

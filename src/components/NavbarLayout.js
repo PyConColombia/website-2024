@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -42,7 +42,7 @@ const NavbarLayout = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Button>Register</Button>
+            {/* <Button>Register</Button> */}
             <NavDropdown title={language} id="collapsible-nav-dropdown">
               {languages.map(
                 (lng) =>
