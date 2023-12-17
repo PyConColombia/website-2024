@@ -6,7 +6,7 @@ const { languages, defaultLanguage } = require('./languages');
 const siteUrl = 'https://2024.pycon.co';
 
 module.exports = {
-  pathPrefix: '/',
+  pathPrefix: '/website-develop',
   siteMetadata: {
     title: `PyCon Colombia 2024`,
     siteUrl
