@@ -42,7 +42,7 @@
     "sass": "^1.69.5"
   },
   "devDependencies": {
-    "eslint": "^8.0.1",
+    "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.25.2",
@@ -53,6 +53,6 @@
     "gatsby-plugin-prettier-eslint": "^1.0.6",
     "gatsby-plugin-root-import": "^2.0.9",
     "gh-pages": "^6.1.0",
-    "prettier": "^3.1.0"
+    "prettier": "^3.1.1"
   }
 }
