@@ -13,7 +13,7 @@ jobs:
       - name: Set up Domain
         run: |
           mkdir -p public
-          echo 'develop.python.co' > public/CNAME
+          echo 'develop.pycon.co' > public/CNAME
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
