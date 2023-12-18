@@ -14,7 +14,7 @@ import {
   faGithubAlt
 } from '@fortawesome/free-brands-svg-icons';
 import { StaticImage } from 'gatsby-plugin-image';
-import ModalDocFooter from './modalDocFooter';
+import ModalDocFooter from './ModalDoc';
 
 const FooterLayout = () => {
   const docsUrlLegal = [
