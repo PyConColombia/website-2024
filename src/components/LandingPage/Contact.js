@@ -5,7 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { StaticImage } from 'gatsby-plugin-image';
-import md5 from 'md5';
+
+import axios from 'axios';
 
 const Contact = () => {
   const [email, setEmail] = useState('');
@@ -16,25 +17,25 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(
-        `https://pycon.us21.list-manage.com/subscribe/post-json?` +
+      const config = {
+        url:
+          `https://pycon.us21.list-manage.com/subscribe/post-json?` +
           new URLSearchParams({
             u: 'b17171278920cd24d0c9c4cfe',
             id: '785e2a687f',
             FNAME: firstName,
             LNAME: lastName,
             EMAIL: email,
-            subscribe: 'Subscribe',
+            subscribe: 'Subscribe'
           }),
-        {
-          method: 'GET',
-          mode: 'cors'
-        }
-      );
+        method: 'GET'
+      };
 
-      console.log(response);
+      const response = await axios(config);
+
+      console.log("Success!",  response);
     } catch (error) {
-      console.error(error);
+      console.error("Error:", error);
     }
   };
 
