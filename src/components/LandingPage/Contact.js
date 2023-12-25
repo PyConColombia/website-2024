@@ -1,15 +1,40 @@
 import React, { useState } from 'react';
+import Alert from 'react-bootstrap/Alert';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { StaticImage } from 'gatsby-plugin-image';
+import { validateEmail } from '../../utils/fields';
 
 const Contact = () => {
   const [email, setEmail] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
+  const [alertMessage, setAlertMessage] = useState('');
+  const [alertType, setAlertType] = useState('');
+  const [blockButton, setBlockButton] = useState(true);
+
+  const onFieldChange = (e) => {
+    const requiredFields = ['email'];
+    const newValue = e.target.value;
+
+    console.log(e.target.name, newValue);
+
+    switch (e.target.name) {
+      case 'email':
+        console.log(requiredFields.includes(e.target.name), !newValue, validateEmail(newValue));
+        setBlockButton(
+          requiredFields.includes(e.target.name) && (!newValue || !validateEmail(newValue))
+        );
+        setEmail(newValue);
+        break;
+      default:
+        break;
+    }
+  };
 
   const onSumitForm = async (e) => {
     e.preventDefault();
@@ -34,9 +59,24 @@ const Contact = () => {
         console.log(response);
       });
 
-      console.log('Success!', response);
+      setShowAlert(true);
+      setAlertType('success');
+      setAlertMessage('Thanks for your interest!');
+      setEmail('');
+      setFirstName('');
+      setLastName('');
     } catch (error) {
       console.error('Error:', error);
+
+      setShowAlert(true);
+      setAlertType('danger');
+      setAlertMessage('Something went wrong, please try again later!');
+    } finally {
+      if (showAlert) {
+        setTimeout(() => {
+          setShowAlert(false);
+        }, 5000);
+      }
     }
   };
 
@@ -45,12 +85,18 @@ const Contact = () => {
       <div id="form-wrapper">
         <Container fluid>
           <Row>
-            <Col xs={12} md={3} className="d-sm-none d-md-block">
+            <Col xs={12} md={4} className="d-none d-sm-none d-md-block">
               <StaticImage src="../../static/images/contact/1.svg" alt="Contact Icons" />
             </Col>
-            <Col xs={12} md={6} className="justify-content-center">
+            <Col xs={12} md={4} className="justify-content-center">
               <div id="form-container">
                 <h2 className="title">Want to know more?</h2>
+
+                {showAlert && (
+                  <Alert variant={alertType}>
+                    <p>{alertMessage}</p>
+                  </Alert>
+                )}
 
                 <Form>
                   <Form.Group className="mb-3">
@@ -72,18 +118,24 @@ const Contact = () => {
                   <Form.Group className="mb-3">
                     <Form.Control
                       type="email"
+                      name="email"
                       placeholder="Email"
-                      onChange={(e) => setEmail(e.target.value)}
+                      onChange={(e) => onFieldChange(e)}
                       required
                     />
                   </Form.Group>
-                  <Button variant="primary" onClick={onSumitForm} size="lg" id="button-submit">
+                  <Button
+                    variant="primary"
+                    onClick={onSumitForm}
+                    size="lg"
+                    id="button-submit"
+                    disabled={blockButton}>
                     Submit
                   </Button>
                 </Form>
               </div>
             </Col>
-            <Col xs={12} md={3} className="d-sm-none d-md-block">
+            <Col xs={12} md={4} className="d-none d-sm-none d-md-block">
               <StaticImage src="../../static/images/contact/2.svg" alt="Contact Icons" />
             </Col>
           </Row>
