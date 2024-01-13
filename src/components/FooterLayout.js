@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -14,9 +14,19 @@ import {
   faGithubAlt
 } from '@fortawesome/free-brands-svg-icons';
 import { StaticImage } from 'gatsby-plugin-image';
-import ModalDocFooter from './ModalDoc';
+import ModalDocFooter from './modal/ModalDoc';
+import ModalCodeOfConduct from './modal/ModalCodeOfConduct';
+import ModalCodeOfConductE from './modal/ModalCodeOfConductE';
+import HealthPolicy from './modal/HealhPolicy';
 
 const FooterLayout = () => {
+  const [showCode, setShowCode] = useState(false);
+  const [showCodeE, setShowCodeE] = useState(false);
+  const [showHealthPolicy, setShowHealthPolicy] = useState(false);
+  const handleShowCode = () => setShowCode(!showCode);
+  const handleShowCodeE = () => setShowCodeE(!showCodeE);
+  const handleShowHealthPolicy = () => setShowHealthPolicy(!showHealthPolicy);
+
   const docsUrlLegal = [
     {
       name: 'Acta de constitución',
@@ -81,15 +91,16 @@ const FooterLayout = () => {
               <div>Otros</div>
               <div className="footer-separator"></div>
               <ul>
-                <li>Términos y Condiciones</li>
-                <li>Privacidad</li>
+                <li onClick={handleShowCode}>Code of Conduct</li>
+                <li onClick={handleShowCodeE}>Code of Conduct Enforcement Procedure</li>
+                <li onClick={handleShowHealthPolicy}>Health & Safety Policy</li>
               </ul>
 
               <div>Contacto</div>
               <div className="footer-separator"></div>
               <ul>
                 <li>
-                  <Link to="mailto:hello@pycon.com">hello@pycon.com</Link>
+                  <Link to="mailto:hello@pycon.co">hello@pycon.co</Link>
                 </li>
               </ul>
 
@@ -147,6 +158,10 @@ const FooterLayout = () => {
             </Col>
           </Row>
         </Container>
+
+        <ModalCodeOfConduct show={showCode} handleClose={handleShowCode} />
+        <ModalCodeOfConductE show={showCodeE} handleClose={handleShowCodeE} />
+        <HealthPolicy show={showHealthPolicy} handleClose={handleShowHealthPolicy} />
       </div>
     </footer>
   );
