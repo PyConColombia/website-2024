@@ -189,12 +189,18 @@ $duration: 10s
     background-image: url("../images/call-speakers-bg.svg")
     background-size: cover
     background-repeat: no-repeat
-
     .content
       padding: 50px 0
-
       .text
         text-align: center
+      .description
+        font-family: Poppins
+        font-size: 22px
+        font-style: normal
+        font-weight: 400
+        line-height: 30px
+        letter-spacing: 0.84px
+        padding: 20px 0
 
 #contact
   background-color: variables.$main-bg-color
@@ -214,19 +220,3 @@ $duration: 10s
       input
         border-radius: 30px
         font-size: 15px
-
-    #button-submit
-      font-size: 17px
-      font-style: normal
-      font-weight: 500
-      max-width: 300px
-      width: 100%
-
-      &:disabled
-        background-color: variables.$secondary-bg-color
-        border-radius: 30px
-        border: 1px solid #FFF8EC
-        color: variables.$main-text-color
-
-      &:hover
-        background-color: variables.$secondary-bg-color

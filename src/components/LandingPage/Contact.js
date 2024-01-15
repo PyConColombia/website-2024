@@ -127,8 +127,7 @@ const Contact = () => {
                   <Button
                     variant="primary"
                     onClick={onSumitForm}
-                    size="lg"
-                    id="button-submit"
+                    className="button-submit"
                     disabled={blockButton}>
                     Submit
                   </Button>

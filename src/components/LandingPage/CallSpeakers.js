@@ -12,30 +12,29 @@ const CallSpeakers = () => {
         <div className="content">
           <Container>
             <Row className="justify-content-center">
-              <Col xs={12} md={2} className="d-none d-sm-none d-md-block">
+              <Col xs={12} md={2} lg={2} className="d-none d-sm-none d-lg-block">
                 <StaticImage
                   src="../../static/images/megaphone.webp"
                   alt="PyCon Colombia logo"
                   className="logo"
                 />
               </Col>
-              <Col xs={12} md={5}>
+              <Col xs={12} md={6} lg={5}>
                 <div className="text">
                   <h1>Call for proposals</h1>
-                  <p>
+                  <p className="description">
                     Would you like to submit a proposal to participate in PYCON 24? We have topics
                     such as data science, machine learning, web development, and much more.
                   </p>
                   <Button
                     variant="primary"
                     // onClick={onSumitForm}
-                    size="lg"
-                    id="button-submit">
-                    Submit
+                    className="button-submit">
+                    Register now
                   </Button>
                 </div>
               </Col>
-              <Col xs={12} md={2}></Col>
+              <Col xs={12} md={2} lg={2} className="d-none d-sm-none d-lg-block"></Col>
             </Row>
           </Container>
         </div>

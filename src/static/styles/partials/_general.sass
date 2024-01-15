@@ -18,6 +18,24 @@ button
     justify-content: center
     align-items: center
 
+  &.button-submit
+    font-size: 22px
+    font-style: normal
+    font-weight: 400
+    max-width: 300px
+    padding: 16px 32px
+    width: 100%
+
+    &:disabled
+      background-color: variables.$secondary-bg-color
+      border-radius: 60px
+      border: 1px solid #FFF8EC
+      color: variables.$main-text-color
+
+    &:hover
+      background-color: variables.$secondary-bg-color
+
+
 nav
   &.navbar-main
     background-color: variables.$secondary-bg-color !important
