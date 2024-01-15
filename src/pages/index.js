@@ -6,7 +6,8 @@ import Layout from 'components/layout';
 import Welcome from 'components/LandingPage/Welcome';
 // import Technologies from '../components/LandingPage/Technologies';
 // import Sponsors from '../components/LandingPage/Sponsors';
-import Contact from '../components/LandingPage/Contact';
+import Contact from 'components/LandingPage/Contact';
+import CallSpeakers from 'components/LandingPage/CallSpeakers';
 // import Speakers from '../components/LandingPage/Speakers';
 
 const IndexPage = () => {
@@ -19,6 +20,7 @@ const IndexPage = () => {
         {/* <Technologies />
         <Speakers />
         <Sponsors /> */}
+        <CallSpeakers />
         <Contact />
       </main>
     </Layout>

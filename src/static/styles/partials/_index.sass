@@ -182,6 +182,20 @@ $duration: 10s
   background-color: #FFF8EC
   padding: 50px 0
 
+#call-speakers
+  background: linear-gradient(207deg, #FFE7F8 2.85%, #F4DCED 50.56%, #E07CC3 100%)
+
+  .background
+    background-image: url("../images/call-speakers-bg.svg")
+    background-size: cover
+    background-repeat: no-repeat
+
+    .content
+      padding: 50px 0
+
+      .text
+        text-align: center
+
 #contact
   background-color: variables.$main-bg-color
   padding: 100px 0
@@ -205,7 +219,8 @@ $duration: 10s
       font-size: 17px
       font-style: normal
       font-weight: 500
-      min-width: 300px
+      max-width: 300px
+      width: 100%
 
       &:disabled
         background-color: variables.$secondary-bg-color
