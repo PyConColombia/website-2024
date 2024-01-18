@@ -12,7 +12,9 @@ const Layout = ({ children }) => {
     <>
       {/* <AlertNews message="Early birds tickets on sale now!" /> */}
       {/* <NavbarLayout /> */}
-      {children}
+      <main>
+        {children}
+      </main>
       <FooterLayout />
     </>
   );

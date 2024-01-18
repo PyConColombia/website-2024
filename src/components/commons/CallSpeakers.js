@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby-plugin-react-i18next';
 
 const CallSpeakers = () => {
   return (
@@ -26,6 +27,7 @@ const CallSpeakers = () => {
                     Would you like to submit a proposal to participate in PYCON 24? We have topics
                     such as data science, machine learning, web development, and much more.
                   </p>
+                  <p>Detailed information and FAQ <Link to="/call-for-proposals">here</Link>.</p>
                   <Button
                     variant="primary"
                     // onClick={onSumitForm}

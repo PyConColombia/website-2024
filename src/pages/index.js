@@ -7,7 +7,7 @@ import Welcome from 'components/LandingPage/Welcome';
 // import Technologies from '../components/LandingPage/Technologies';
 // import Sponsors from '../components/LandingPage/Sponsors';
 import Contact from 'components/LandingPage/Contact';
-import CallSpeakers from 'components/LandingPage/CallSpeakers';
+import CallSpeakers from 'components/commons/CallSpeakers';
 // import Speakers from '../components/LandingPage/Speakers';
 
 const IndexPage = () => {
@@ -15,14 +15,12 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <main>
-        <Welcome />
-        {/* <Technologies />
-        <Speakers />
-        <Sponsors /> */}
-        <CallSpeakers />
-        <Contact />
-      </main>
+      <Welcome />
+      {/* <Technologies />
+      <Speakers />
+      <Sponsors /> */}
+      <CallSpeakers />
+      <Contact />
     </Layout>
   );
 };
