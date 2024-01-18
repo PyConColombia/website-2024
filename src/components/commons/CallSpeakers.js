@@ -27,7 +27,9 @@ const CallSpeakers = () => {
                     Would you like to submit a proposal to participate in PYCON 24? We have topics
                     such as data science, machine learning, web development, and much more.
                   </p>
-                  <p>Detailed information and FAQ <Link to="/call-for-proposals">here</Link>.</p>
+                  <p className="description">
+                    Detailed information and FAQ <Link to="/call-for-proposals">here</Link>.
+                  </p>
                   <Button
                     variant="primary"
                     // onClick={onSumitForm}
