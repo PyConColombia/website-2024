@@ -22,13 +22,13 @@ const NavbarLayout = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="" className="nav-item">
-              Location
+            <Nav.Link href="/" className="nav-item">
+              Main
             </Nav.Link>
-            <Nav.Link href="" className="nav-item">
-              Keynotes
+            <Nav.Link href="/call-for-proposals" className="nav-item">
+              CFP
             </Nav.Link>
-            <Nav.Link href="" className="nav-item">
+            {/* <Nav.Link href="" className="nav-item">
               Speakers
             </Nav.Link>
             <Nav.Link href="" className="nav-item">
@@ -39,11 +39,24 @@ const NavbarLayout = () => {
             </Nav.Link>
             <Nav.Link href="" className="nav-item">
               Team
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
           <Nav>
+            <NavDropdown title="2024">
+              {[2017, 2018, 2019, 2020, 2021, 2022, 2023].map((year) => (
+                <NavDropdown.Item key={year}>
+                  <Link
+                    to={`https://${year}.pycon.co`}
+                    style={{
+                      textDecoration: 'none'
+                    }}>
+                    {year}
+                  </Link>
+                </NavDropdown.Item>
+              ))}
+            </NavDropdown>
             {/* <Button>Register</Button> */}
-            <NavDropdown title={language} id="collapsible-nav-dropdown">
+            {/* <NavDropdown title={language} id="collapsible-nav-dropdown">
               {languages.map(
                 (lng) =>
                   lng !== language && (
@@ -59,7 +72,7 @@ const NavbarLayout = () => {
                     </NavDropdown.Item>
                   )
               )}
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

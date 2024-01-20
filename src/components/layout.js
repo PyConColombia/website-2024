@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* <AlertNews message="Early birds tickets on sale now!" /> */}
-      {/* <NavbarLayout /> */}
+      <NavbarLayout />
       <main>
         {children}
       </main>

@@ -32,7 +32,7 @@ const Title = () => {
             <Col xs={10} md={11}>
               <br />
               <p>
-                We are inviting all the Python Community to submit proposals to PyCon Colombia 2023,
+                We are inviting all the Python Community to submit proposals to PyCon Colombia 2024,
                 don't hesitate to submit yours! or, if you know somebody who you think should be
                 speaking at PyCon Colombia, please send them this{' '}
                 <a
@@ -42,7 +42,7 @@ const Title = () => {
                 </a>
               </p>
               <br />
-              <p>This CFP closes at March 30th 2023.</p>
+              <p>This CFP closes at March 30th 2024.</p>
 
               <h1>Topics</h1>
               <br />
@@ -84,13 +84,13 @@ const Title = () => {
                 about your talk, don't worry! we love people like you, this is your conference!
                 submit your proposal and maybe we will discover new topics to improve our lists.
               </p>
-              <h1>Why should you speak at PyCon Colombia 2023?</h1>
+              <h1>Why should you speak at PyCon Colombia 2024?</h1>
               <br />
               <p>
                 We strongly believe that if you have something you are really passionate about and
                 you want to spread the word, you should craft a talk and do it! but, if that's not
                 enough to convince you, here is the list of perks you get by becoming a PyCon
-                Colombia 2023 speaker:
+                Colombia 2024 speaker:
               </p>
               <br />
               <ul>
