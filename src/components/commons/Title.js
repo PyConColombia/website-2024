@@ -36,7 +36,7 @@ const Title = () => {
                 don't hesitate to submit yours! or, if you know somebody who you think should be
                 speaking at PyCon Colombia, please send them this{' '}
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSd8R2ZybHRHyBSCN9ec-6k5BEEAWfdhZDdV4v8QajbAOYbCtg/viewform"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSelYKA6txm_uTmpgqydOYw27uKwaY701Vy4qJac1NCzYFq7Ow/viewform"
                   target="blank_">
                   Link
                 </a>
@@ -94,12 +94,12 @@ const Title = () => {
               </p>
               <br />
               <ul>
-                <li>Free full conference pass</li>
-                <li>
-                  A professionally produced video of your talk published in our YouTube channel (see
-                  Talk Videos section for more details)
-                </li>
-                <li>The opportunity to positively impact the lives of over 600 attendees</li>
+                <li>Free full conference pass: Gives you access to all talks and workshops.</li>
+                <li>Access to Speaker dinner: Dinner that includes keynotes speakers, sponsors, speakers and
+                organizers, fully paid by the conference.</li>
+                <li>A professionally produced video of your
+                talk published in our YouTube channel (see Talk Videos section for more details)</li>
+                <li>The opportunity to positively impact the lives of over 600 attendees.</li>
               </ul>
               <h1>Our Selection Process</h1>
               <br />

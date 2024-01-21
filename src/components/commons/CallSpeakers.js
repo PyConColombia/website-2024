@@ -32,7 +32,8 @@ const CallSpeakers = () => {
                   </p>
                   <Button
                     variant="primary"
-                    // onClick={onSumitForm}
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSelYKA6txm_uTmpgqydOYw27uKwaY701Vy4qJac1NCzYFq7Ow/viewform"
+                    target="_blank"
                     className="button-submit">
                     Register now
                   </Button>

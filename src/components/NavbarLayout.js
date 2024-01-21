@@ -42,19 +42,19 @@ const NavbarLayout = () => {
             </Nav.Link> */}
           </Nav>
           <Nav>
-            <NavDropdown title="2024">
+            {/* <NavDropdown title="2024">
               {[2017, 2018, 2019, 2020, 2021, 2022, 2023].map((year) => (
                 <NavDropdown.Item key={year}>
-                  <Link
-                    to={`https://${year}.pycon.co`}
+                  <a
+                    href={`https://${year}.pycon.co`}
                     style={{
                       textDecoration: 'none'
                     }}>
                     {year}
-                  </Link>
+                  </a>
                 </NavDropdown.Item>
               ))}
-            </NavDropdown>
+            </NavDropdown> */}
             {/* <Button>Register</Button> */}
             {/* <NavDropdown title={language} id="collapsible-nav-dropdown">
               {languages.map(
