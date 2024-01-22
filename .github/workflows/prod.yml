@@ -1,0 +1,22 @@
+name: Publish PyCon PROD
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Domain
+        run: |
+          mkdir -p public
+          echo '2024.pycon.co' > public/CNAME
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-repo: website-2024
+          deploy-branch: gh-pages
+          gatsby-args: --prefix-paths
