@@ -76,6 +76,7 @@ const FooterLayout = () => {
                 <StaticImage src="../static/images/pycon-logo.svg" alt="PyCon Colombia logo" />
               </div>
             </Col>
+            {/*
             <Col xs={12} md={6} lg={3} className="footer-column">
               <div className="footer-label">Legales</div>
               <div className="footer-separator"></div>
@@ -87,6 +88,7 @@ const FooterLayout = () => {
                 ))}
               </ul>
             </Col>
+            */}
             <Col xs={12} md={6} lg={4} className="footer-column">
               <div>Otros</div>
               <div className="footer-separator"></div>
