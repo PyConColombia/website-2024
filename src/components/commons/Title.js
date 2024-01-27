@@ -42,7 +42,7 @@ const Title = () => {
                 </a>
               </p>
               <br />
-              <p>This CFP closes at March 30th 2024.</p>
+              <p>This CFP closes at <b>March 11th 2024</b>.</p>
 
               <h1>Topics</h1>
               <br />
