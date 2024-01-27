@@ -8,7 +8,7 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import {
   faTiktok,
   faFacebookF,
-  faTwitter,
+  faXTwitter,
   faInstagram,
   faYoutube,
   faGithubAlt
@@ -115,7 +115,7 @@ const FooterLayout = () => {
                     className="">
                     <div className="fa-stack">
                       <FontAwesomeIcon className="fa-stack-2x" icon={faCircle} color="white" />
-                      <FontAwesomeIcon className="social-icon fa-stack-1x" icon={faTwitter} />
+                      <FontAwesomeIcon className="social-icon fa-stack-1x" icon={faXTwitter} />
                     </div>
                   </a>
                   <a href="https://www.facebook.com/pyconcolombia" target="_blank" rel="noreferrer">
