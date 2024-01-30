@@ -17,7 +17,7 @@ const Welcome = () => {
                   <span className="bold">Del 7 al 9 de Junio |</span>
                   <span> Medellín - Colombia</span>
                 </h2>
-                <StaticImage src="../../static/images/pycon-logo.svg" alt="PyCon Colombia logo" />
+                <StaticImage src="../../static/images/logo-pycon.webp" alt="PyCon Colombia logo" />
               </div>
             </Col>
           </Row>

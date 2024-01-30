@@ -73,7 +73,7 @@ const FooterLayout = () => {
           <Row>
             <Col xs={12} md={12} lg={5} className="footer-column">
               <div className="logo">
-                <StaticImage src="../static/images/pycon-logo.svg" alt="PyCon Colombia logo" />
+                <StaticImage src="../static/images/logo-pycon.webp" alt="PyCon Colombia logo" />
               </div>
             </Col>
             {/*
