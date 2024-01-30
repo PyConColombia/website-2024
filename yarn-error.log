@@ -1,30 +1,29 @@
 Arguments: 
-  /Users/rendon/.nvm/versions/node/v18.18.2/bin/node /Users/rendon/.nvm/versions/node/v16.15.0/bin/yarn add gatsby-plugin-prettier-eslintyarn eslint prettier
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js install
 
 PATH: 
-  /Users/rendon/.nvm/versions/node/v18.18.2/bin:/usr/local/opt/libpq/bin:/Users/rendon/.nvm/versions/node/v16.15.0/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/opt/libpq/bin:/Users/rendon/.nvm/versions/node/v16.15.0/bin:/Users/rendon/.cargo/bin:/Users/rendon/Library/Android/sdk/emulator:/Users/rendon/Library/Android/sdk/tools:/Users/rendon/Library/Android/sdk/tools/bin:/Users/rendon/Library/Android/sdk/platform-tools:/Users/rendon/Library/Android/sdk/emulator:/Users/rendon/Library/Android/sdk/tools:/Users/rendon/Library/Android/sdk/tools/bin:/Users/rendon/Library/Android/sdk/platform-tools
+  C:\Program Files\WindowsApps\Microsoft.PowerShell_7.4.1.0_x64__8wekyb3d8bbwe;C:\Program Files\Eclipse Adoptium\jdk-8.0.382.5-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\starship\bin\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\ProgramData\nvm;C:\Program Files\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Users\rendon\.pyenv\pyenv-win\bin;C:\Users\rendon\.pyenv\pyenv-win\shims;C:\Users\rendon\scoop\shims;C:\Users\rendon\AppData\Local\Microsoft\WindowsApps;C:\tools\neovim\nvim-win64\bin;C:\Users\rendon\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2023.1.3\bin;;C:\ProgramData\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\PhpStorm 2023.1.3\bin;;C:\Users\rendon\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rendon\AppData\Local\Android\Sdk\platform-tools
 
 Yarn version: 
   1.22.19
 
 Node version: 
-  18.18.2
+  18.16.1
 
 Platform: 
-  darwin x64
+  win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/gatsby-plugin-prettier-eslintyarn: Not found
-      at params.callback [as _callback] (/Users/rendon/.nvm/versions/node/v16.15.0/lib/node_modules/yarn/lib/cli.js:66145:18)
-      at self.callback (/Users/rendon/.nvm/versions/node/v16.15.0/lib/node_modules/yarn/lib/cli.js:140890:22)
-      at Request.emit (node:events:517:28)
-      at Request.<anonymous> (/Users/rendon/.nvm/versions/node/v16.15.0/lib/node_modules/yarn/lib/cli.js:141862:10)
-      at Request.emit (node:events:517:28)
-      at IncomingMessage.<anonymous> (/Users/rendon/.nvm/versions/node/v16.15.0/lib/node_modules/yarn/lib/cli.js:141784:12)
-      at Object.onceWrapper (node:events:631:28)
-      at IncomingMessage.emit (node:events:529:35)
-      at endReadableNT (node:internal/streams/readable:1368:12)
-      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+  Error: https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.5.1.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\ProgramData\nvm\v18.16.1\node_modules\yarn\lib\cli.js:141517:19)
+      at Object.onceWrapper (node:events:627:28)
+      at ClientRequest.emit (node:events:513:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:848:9)
+      at Object.onceWrapper (node:events:627:28)
+      at TLSSocket.emit (node:events:525:35)
+      at Socket._onTimeout (node:net:570:8)
+      at listOnTimeout (node:internal/timers:569:17)
+      at process.processTimers (node:internal/timers:512:7)
 
 npm manifest: 
   {
@@ -51,6 +50,7 @@ npm manifest:
       "@fortawesome/free-solid-svg-icons": "^6.5.1",
       "@fortawesome/react-fontawesome": "^0.2.0",
       "@mdx-js/react": "^3.0.0",
+      "axios": "^1.6.2",
       "babel-plugin-styled-components": "^2.1.4",
       "bootstrap": "^5.3.2",
       "gatsby": "^5.12.4",
@@ -64,6 +64,7 @@ npm manifest:
       "gatsby-source-filesystem": "^5.12.1",
       "gatsby-transformer-sharp": "^5.12.3",
       "i18next": "^23.7.7",
+      "md5": "^2.3.0",
       "react": "^18.2.0",
       "react-bootstrap": "^2.9.1",
       "react-dom": "^18.2.0",
@@ -82,7 +83,7 @@ npm manifest:
       "gatsby-plugin-prettier-eslint": "^1.0.6",
       "gatsby-plugin-root-import": "^2.0.9",
       "gh-pages": "^6.1.0",
-      "prettier": "^3.1.0"
+      "prettier": "^3.1.1"
     }
   }
 
@@ -3233,6 +3234,15 @@ Lockfile:
     dependencies:
       follow-redirects "^1.14.0"
   
+  axios@^1.6.2:
+    version "1.6.2"
+    resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.2.tgz#de67d42c755b571d3e698df1b6504cde9b0ee9f2"
+    integrity sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==
+    dependencies:
+      follow-redirects "^1.15.0"
+      form-data "^4.0.0"
+      proxy-from-env "^1.1.0"
+  
   axobject-query@^3.2.1:
     version "3.2.1"
     resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-3.2.1.tgz#39c378a6e3b06ca679f29138151e45b2b32da62a"
@@ -3801,6 +3811,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
     integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
   
+  charenc@0.0.2:
+    version "0.0.2"
+    resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
+    integrity sha512-yrLQ/yVUFXkzg7EDQsPieE/53+0RlaWTs+wBrvW36cyilJ2SaDWfl4Yj7MtLTXleV9uEKefbAGUPv2/iWSooRA==
+  
   "chokidar@>=3.0.0 <4.0.0", chokidar@^3.3.1, chokidar@^3.4.2, chokidar@^3.5.3:
     version "3.5.3"
     resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
@@ -4206,6 +4221,11 @@ Lockfile:
       path-key "^3.1.0"
       shebang-command "^2.0.0"
       which "^2.0.1"
+  
+  crypt@0.0.2:
+    version "0.0.2"
+    resolved "https://registry.yarnpkg.com/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
+    integrity sha512-mCxBlsHFYh9C+HVpiEacem8FEBnMXgU9gy4zmNC+SXAZNB/1idgp/aulFJ4FgCi7GPEVbfyng092GqL2k2rmow==
   
   crypto-random-string@^2.0.0:
     version "2.0.0"
@@ -5695,7 +5715,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.9.tgz#7eb4c67ca1ba34232ca9d2d93e9886e611ad7daf"
     integrity sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==
   
-  follow-redirects@^1.14.0:
+  follow-redirects@^1.14.0, follow-redirects@^1.15.0:
     version "1.15.3"
     resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.3.tgz#fe2f3ef2690afce7e82ed0b44db08165b207123a"
     integrity sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==
@@ -7083,6 +7103,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.5.tgz#ebc252e400d22ff8d77fa09888821a24a658c191"
     integrity sha512-i2R6zNFDwgEHJyQUtJEk0XFi1i0dPFn/oqjK3/vPCcDeJvW5NQ83V8QbicfF1SupOaB0h8ntgBC2YiE7dfyctQ==
   
+  is-buffer@~1.1.6:
+    version "1.1.6"
+    resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
+    integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
+  
   is-builtin-module@^3.2.1:
     version "3.2.1"
     resolved "https://registry.yarnpkg.com/is-builtin-module/-/is-builtin-module-3.2.1.tgz#f03271717d8654cfcaf07ab0463faa3571581169"
@@ -7889,6 +7914,15 @@ Lockfile:
     version "1.1.1"
     resolved "https://registry.yarnpkg.com/markdown-extensions/-/markdown-extensions-1.1.1.tgz#fea03b539faeaee9b4ef02a3769b455b189f7fc3"
     integrity sha512-WWC0ZuMzCyDHYCasEGs4IPvLyTGftYwh6wIEOULOF0HXcqZlhwRzrK0w2VUlxWA98xnvb/jszw4ZSkJ6ADpM6Q==
+  
+  md5@^2.3.0:
+    version "2.3.0"
+    resolved "https://registry.yarnpkg.com/md5/-/md5-2.3.0.tgz#c3da9a6aae3a30b46b7b0c349b87b110dc3bda4f"
+    integrity sha512-T1GITYmFaKuO91vxyoQMFETst+O71VUPEU3ze5GNzDm0OWdP8v1ziTaAEPUr/3kLsY3Sftgz242A1SetQiDL7g==
+    dependencies:
+      charenc "0.0.2"
+      crypt "0.0.2"
+      is-buffer "~1.1.6"
   
   mdast-util-definitions@^4.0.0:
     version "4.0.0"
@@ -9516,10 +9550,10 @@ Lockfile:
     dependencies:
       fast-diff "^1.1.2"
   
-  prettier@^3.1.0:
-    version "3.1.0"
-    resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.1.0.tgz#c6d16474a5f764ea1a4a373c593b779697744d5e"
-    integrity sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==
+  prettier@^3.1.1:
+    version "3.1.1"
+    resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.1.1.tgz#6ba9f23165d690b6cbdaa88cb0807278f7019848"
+    integrity sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==
   
   pretty-bytes@^5.6.0:
     version "5.6.0"
@@ -9616,6 +9650,11 @@ Lockfile:
     dependencies:
       forwarded "0.2.0"
       ipaddr.js "1.9.1"
+  
+  proxy-from-env@^1.1.0:
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
+    integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
   
   pseudomap@^1.0.1:
     version "1.0.2"

@@ -27,7 +27,16 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>PyCon Colombia 2024</title>;
+export const Head = () => (
+  <>
+    <title>PyCon Colombia 2024</title>
+    <meta name="description" content="PyCon Colombia 2024" />
+    <meta name="keywords" content="PyCon Colombia 2024" />
+    <meta name="author" content="Python Colombia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/icon" href="/favicon.ico" />
+  </>
+);
 
 export const query = graphql`
   query ($language: String!) {
