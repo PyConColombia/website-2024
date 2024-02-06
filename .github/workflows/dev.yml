@@ -22,7 +22,7 @@ jobs:
           echo 'develop.pycon.co' > public/CNAME
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          access-token: ${{ steps.generate_token.outputs.token }}
+          access-token: x-access-token:${{ steps.generate_token.outputs.token }}
           deploy-repo: website-develop
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
