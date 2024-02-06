@@ -9,6 +9,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Generate access token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.PYCON_CO_APP_ID }}
+          private-key: ${{ secrets.PYCON_CO_PRIVATE_KEY }}
       - uses: actions/checkout@v3
       - name: Set up Domain
         run: |
@@ -16,7 +22,7 @@ jobs:
           echo 'develop.pycon.co' > public/CNAME
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
+          access-token: ${{ steps.generate_token.outputs.token }}
           deploy-repo: website-develop
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
