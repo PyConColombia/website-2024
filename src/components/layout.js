@@ -10,7 +10,7 @@ import FooterLayout from './FooterLayout';
 const Layout = ({ children }) => {
   return (
     <>
-      <AlertNews message="Early birds tickets on sale now!" />
+      <AlertNews />
       <NavbarLayout />
       <main>
         {children}
