@@ -1,9 +1,9 @@
-name: Publish PyCon DEV
+name: Publish PyCon PROD
 
 on:
   push:
     branches:
-      - develop
+      - production
 
 jobs:
   build:
