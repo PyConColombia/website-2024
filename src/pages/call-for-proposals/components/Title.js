@@ -24,7 +24,9 @@ const Title = () => {
                     Calling on all Python enthusiasts! Submit your proposals for PyCon Colombia 2024
                     now. Don't miss the opportunity to share your insights
                   </p>
-                  <span className="closes-date"><FontAwesomeIcon icon={faCalendar} /> Closes at March 11th 2024</span>
+                  <span className="closes-date">
+                    <FontAwesomeIcon icon={faCalendar} /> Closes at March 11th 2024
+                  </span>
                 </div>
               </Col>
             </Row>
@@ -33,7 +35,13 @@ const Title = () => {
       </div>
 
       <Technical />
+      <div className="decoration-1-wrapper">
+        <div className="decoration-1"></div>
+      </div>
       <Topics />
+      <div className="decoration-2-wrapper">
+        <div className="decoration-2"></div>
+      </div>
     </div>
   );
 };

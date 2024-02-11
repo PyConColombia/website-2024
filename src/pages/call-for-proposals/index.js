@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from 'components/layout';
 import CallSpeakers from 'components/commons/CallSpeakers';
 import Title from './components/Title';
-import Content from './components/content';
+import Content from './components/Content';
 
 const callForProposals = () => {
   return (
