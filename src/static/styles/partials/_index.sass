@@ -27,30 +27,23 @@ $duration: 10s
   border: none
   border-radius: 0
   color: variables.$main-bg-color
+  cursor: pointer
   margin: 0
   padding: 15px 0 40px
 
+
   .ticker-wrapper
-    box-sizing: content-box
-    overflow: hidden
-    padding-left: 100%
     position: fixed
     width: 100%
 
     .ticker
-      display: inline-block
-      white-space: nowrap
-      padding-right: 100%
-      box-sizing: content-box
-
-      -webkit-animation-iteration-count: infinite
-      animation-iteration-count: infinite
-      -webkit-animation-timing-function: linear
-      animation-timing-function: linear
-      -webkit-animation-name: ticker
-      animation-name: ticker
-      -webkit-animation-duration: $duration
-      animation-duration: $duration
+      background-image: url("../images/alert-message.svg")
+      background-repeat: repeat-x
+      background-size: contain
+      background-origin: padding-box
+      height: 40px
+      margin: 0
+      width: 100%
 
 #data
   background-color: variables.$main-bg-color
