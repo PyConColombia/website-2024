@@ -35,6 +35,10 @@ export const Head = () => (
     <meta name="author" content="Python Colombia" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/icon" href="/favicon.ico" />
+
+    <meta property="og:title" content="PyCon Colombia 2024" />
+    <meta property="og:site_name" content="PyCon Colombia 2024" />
+    <meta property="og:type" content="website" />
   </>
 );
 

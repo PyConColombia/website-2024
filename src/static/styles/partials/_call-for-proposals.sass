@@ -1,0 +1,165 @@
+@use "../variables"
+
+.call-for-proposals
+  background-color: variables.$main-bg-color
+
+  .welcome
+    background-image: url("../images/call-for-proposals-bg.svg")
+    background-size: cover
+    background-repeat: no-repeat
+    padding: 100px 0
+
+    .text
+      font-size: 23px
+      line-height: 35px
+      font-weight: 300
+
+    .closes-date
+      border: 1px solid variables.$pink
+      border-radius: 13px
+      color: variables.$pink
+      font-size: 20px
+      font-style: normal
+      font-weight: 400
+      letter-spacing: 2.5px
+      line-height: 31px
+      margin: 40px auto
+      padding: 5px 25px
+
+  #technical
+    border: 1px solid #000
+    background: linear-gradient(153deg, #D3C3ED 0.67%, #D3C3ED 46.7%, #EEE3FF 94.7%)
+    padding: 35px 20px
+    font-size: 20px
+    font-weight: 400
+    line-height: 30px
+    text-align: center
+
+    .list
+      width: 100%
+      align-items: center
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      overflow-x: auto
+
+      .element
+        font-weight: 500
+        letter-spacing: 2.38px
+        padding: 20px
+
+      .icon
+        img
+          max-height: 50px
+          width: 100%
+
+  #topics
+    border: 1px solid #000
+    background: linear-gradient(298deg, #8CB6F3 -7.13%, #8CB6F3 35.52%, #CEE0FB 92.52%)
+    padding: 35px 20px
+    font-size: 20px
+    font-weight: 400
+    line-height: 30px
+    text-align: center
+
+    .list
+      width: 100%
+      align-items: center
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      overflow-x: auto
+
+      .element
+        font-weight: 500
+        letter-spacing: 2.38px
+        padding: 20px
+
+      .icon
+        img
+          max-height: 50px
+          width: 100%
+
+  .content
+    background-color: variables.$main-bg-color
+    color: variables.$main-text-color
+    font-size: 20px
+    font-weight: 400
+    line-height: 30px
+    padding: 100px 0
+
+    .title-question-container
+      text-align: center
+      margin: 40px auto
+
+    .questions
+      border: 1px solid #D3C3ED
+      background-color: transparent
+      border-radius: 13px
+      margin: 20px auto
+
+      .question-header
+        button
+          background-color: transparent
+          color: variables.$main-text-color
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          padding: 10px 50px
+
+          &:focus
+            box-shadow: none
+
+          &::after
+            display: none
+
+        .question-title
+          font-size: 18px
+          font-weight: 400
+          line-height: 30px
+        .question-icon
+          img
+            max-height: 30px
+
+      .question-body
+        border-top: 1px solid #D3C3ED
+        color: variables.$main-text-color
+        font-size: 17px
+        padding: 30px 50px
+
+    .cards-wrapper
+      padding: 50px 0
+      .talk-card
+        border: 1px solid #8CB6F3
+        border-radius: 13px
+        font-size: 17px
+        padding: 20px
+        margin: 40px auto
+        text-align: center
+
+        .talk-title
+          color: #8CB6F3
+
+  .decoration-1-wrapper
+    background: linear-gradient(159.21deg, #FFB2D8 6.67%, #FFB2D8 44.72%, #FFD9EC 89.68%)
+    height: 30px
+    width: 100%
+    margin-bottom: 40px
+
+    .decoration-1
+      background-image: url("../images/icons/decoration-1.svg")
+      background-repeat: repeat-x
+      background-size: contain
+      height: 30px
+
+  .decoration-2-wrapper
+    background: linear-gradient(152.81deg, #D3C3ED 0.67%, #D3C3ED 46.7%, #EEE3FF 94.7%)
+
+    height: 30px
+    width: 100%
+
+    .decoration-2
+      background-image: url("../images/icons/decoration-2.svg")
+      background-repeat: repeat-x
+      background-size: contain
+      height: 30px
