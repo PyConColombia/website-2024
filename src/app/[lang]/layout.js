@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import props from 'prop-types';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { Poppins } from 'next/font/google';
 import NavbarCustom from '@/app/[lang]/components/NavbarCustom';
 import { I18nContext } from '@/contexts/I18nContext';
@@ -37,6 +38,7 @@ const Root = ({ children, params: { lang } }) => {
           <main>{children}</main>
           <FooterLayout />
         </body>
+        <GoogleAnalytics gaId="G-RYYD6XKC7Y" />
       </html>
     </I18nContext.Provider>
   );
