@@ -1,0 +1,20 @@
+[
+  {
+    "id": "john-doe",
+    "team": "website",
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "bYQJ9@example.com",
+    "photo": "https://i.pravatar.cc/300",
+    "biography": {
+      "en": "I am John Doe. I am an amazing speaker.",
+      "es": "Yo soy John Doe. Soy un gran orador."
+    },
+    "affiliation": "Acme Inc.",
+    "facebook": "https://www.facebook.com/johndoe",
+    "twitter": "@johndoe",
+    "linkedin": "https://www.linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe",
+    "website": "https://johndoe.com"
+  }
+]
