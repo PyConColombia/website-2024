@@ -1,0 +1,43 @@
+name: Staging Checks
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  format-js:
+    name: JS Code Format
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+        with:
+          path: pycon-website-template
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '20.11'
+      - name: Cache NPM
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-20.11-${{ hashFiles('pycon-website-template/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-20.11-
+      - name: Install node dependencies
+        run: |
+          cd pycon-website-template/
+          npm install
+      - name: Show node environment
+        run: |
+          node --version
+          npm --version
+      - name: Run JS lint
+        run: |
+          cd pycon-website-template/
+          npm run lint
