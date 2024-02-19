@@ -94,8 +94,20 @@ const Question = () => {
               </li>
               <li>The opportunity to positively impact the lives of over 600 attendees.</li>
             </ul>
-            <h1>Our Selection Process</h1>
-            <br />
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="2" className="questions">
+          <Accordion.Header className="question-header">
+            <span className="question-title">Our Selection Process</span>
+            <Image
+              src="/images/icons/question-button.svg"
+              alt="question"
+              class="question-icon"
+              width={40}
+              height={40}
+            />
+          </Accordion.Header>
+          <Accordion.Body className="question-body">
             <p>
               In order to create the most valuable talks and workshops line-up for the conference we
               follow this process:
@@ -121,7 +133,7 @@ const Question = () => {
             </p>
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="2" className="questions">
+        <Accordion.Item eventKey="3" className="questions">
           <Accordion.Header className="question-header">
             <span className="question-title">Code of Conduct</span>
             <Image
