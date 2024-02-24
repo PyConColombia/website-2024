@@ -38,5 +38,45 @@
     "website": "https://janedenoe.com",
     "country_origin": "Colombia",
     "country_residence": "Canada"
+  },
+  {
+    "id": "jane-doe-2",
+    "type": "keynote",
+    "first_name": "Jane 2",
+    "last_name": "Doe",
+    "email": "bYQJ9@example.com",
+    "photo": "https://i.pravatar.cc/300",
+    "biography": {
+      "en": "I am Jane Doe. I am an amazing speaker.",
+      "es": "Yo soy Jane Doe. Soy un gran orador."
+    },
+    "affiliation": "Acme Inc.",
+    "facebook": "https://www.facebook.com/johndoe",
+    "twitter": "@johndoe",
+    "linkedin": "https://www.linkedin.com/in/johndoe",
+    "github": "https://github.com/janedenoe",
+    "website": "https://janedenoe.com",
+    "country_origin": "Colombia",
+    "country_residence": "Canada"
+  },
+  {
+    "id": "jane-doe-3",
+    "type": "keynote",
+    "first_name": "Jane 3",
+    "last_name": "Doe",
+    "email": "bYQJ9@example.com",
+    "photo": "https://i.pravatar.cc/300",
+    "biography": {
+      "en": "I am Jane Doe. I am an amazing speaker.",
+      "es": "Yo soy Jane Doe. Soy un gran orador."
+    },
+    "affiliation": "Acme Inc.",
+    "facebook": "https://www.facebook.com/johndoe",
+    "twitter": "@johndoe",
+    "linkedin": "https://www.linkedin.com/in/johndoe",
+    "github": "https://github.com/janedenoe",
+    "website": "https://janedenoe.com",
+    "country_origin": "Colombia",
+    "country_residence": "Canada"
   }
 ]

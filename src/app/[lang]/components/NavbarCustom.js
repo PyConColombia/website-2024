@@ -61,6 +61,9 @@ const NavbarCustom = ({ lang }) => {
             <Nav.Link as={Link} href={`/${lang}/call-for-proposals`} className="nav-item">
               {i18nDictionary?.navbar?.cfp}
             </Nav.Link>
+            <Nav.Link as={Link} href={`/${lang}/keynotes`} className="nav-item">
+              {i18nDictionary?.navbar?.keynotes}
+            </Nav.Link>
           </Nav>
           {/* <Nav>
             <NavDropdown title={lang} id="collapsible-nav-dropdown" onSelect={onChangeLocale}>
