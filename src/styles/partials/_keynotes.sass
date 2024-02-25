@@ -4,23 +4,27 @@
   color: variables.$main-text-color
   background-color: variables.$main-bg-color
 
-  .welcome
-    background-image: url("/images/call-for-proposals-bg.svg")
+  .keynotes-bg
+    background-image: url("/images/keynotes/background.svg")
     background-size: inherit
     background-repeat: no-repeat
-    padding: 100px 0
-
-    .text
-      font-size: 23px
-      line-height: 35px
-      font-weight: 300
-
-  .keynotes-bg
     font-size: 20px
+
+    .welcome
+      background-color: transparent
+      padding: 100px 0
+
+      .text
+        font-size: 23px
+        line-height: 35px
+        font-weight: 300
 
     .keynote-card
       align-items: center
       margin: 40px 0
+
+      .keynote-title
+        margin: 20px 0
 
       p
         color: variables.$secondary-text-color
@@ -53,8 +57,10 @@
         margin: 40px auto
         padding: 5px 25px
 
-      .social-icon
-        color: variables.$main-bg-color
+      .social-icons
+        margin: 15px 0
+        .social-icon
+          color: variables.$main-bg-color
 
 // Colors
 .pink

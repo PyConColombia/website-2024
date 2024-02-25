@@ -13,15 +13,15 @@ import Title from './components/Title';
 const Speakers = ({ params: { lang } }) => {
   return (
     <section id="keynotes">
-      <Title />
       <div className="keynotes-bg">
+        <Title />
         <Container>
           <Row className="justify-content-center">
             {speakerslist.map(
               (speaker, index) =>
                 speaker.type === 'keynote' && (
                   <Col xs={12} md={10} key={speaker.id}>
-                    <Card speakerData={speaker} reverse={index % 2 === 0} index={index} />
+                    <Card speakerData={speaker} reverse={index % 2 !== 0} index={index} />
                   </Col>
                 )
             )}

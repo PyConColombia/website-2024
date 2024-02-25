@@ -1,82 +1,142 @@
 [
   {
-    "id": "john-doe",
-    "type": "speaker",
-    "first_name": "John",
-    "last_name": "Doe",
-    "email": "bYQJ9@example.com",
-    "photo": "https://i.pravatar.cc/300",
+    "id": "sebas-ramirez",
+    "type": "keynote",
+    "first_name": "Sebastian",
+    "last_name": "Ramirez",
+    "email": "tiangolo@gmail.com",
+    "photo": "https://media.licdn.com/dms/image/C4E03AQEzWcGUan-CZQ/profile-displayphoto-shrink_800_800/0/1653733322960?e=1714003200&v=beta&t=jk0-AFZ8ZIW-T5_RactpXKVF-rLbGac-vmFZC0ln2Nk",
     "biography": {
-      "en": "I am John Doe. I am an amazing speaker.",
-      "es": "Yo soy John Doe. Soy un gran orador."
+      "en": "Sebastián Ramírez - Creator of FastAPI, Typer, SQLModel, Asyncer, among other tools. A strong advocate for open source software.",
+      "es": "Sebastián Ramírez - Creador de FastAPI, Typer, SQLModel, Asyncer, entre otras herramientas, es un gran promotor del software libre."
     },
-    "affiliation": "Acme Inc.",
-    "facebook": "https://www.facebook.com/johndoe",
-    "twitter": "@johndoe",
-    "linkedin": "https://www.linkedin.com/in/johndoe",
-    "github": "https://github.com/johndoe",
-    "website": "https://johndoe.com",
-    "country_origin": "USA",
-    "country_residence": "USA"
+    "affiliation": "Web Development",
+    "facebook": "",
+    "twitter": "@tiangolo",
+    "linkedin": "https://www.linkedin.com/in/tiangolo/",
+    "github": "github.com/tiangolo",
+    "website": "http://tiangolo.com/",
+    "country_origin": "Colombia",
+    "country_residence": "Alemania"
   },
   {
-    "id": "jane-doe",
+    "id": "lorena-barba",
     "type": "keynote",
-    "first_name": "Jane",
-    "last_name": "Doe",
-    "email": "bYQJ9@example.com",
-    "photo": "https://i.pravatar.cc/300",
+    "first_name": "Lorena",
+    "last_name": "Barba",
+    "email": "labarba@gwu.edu",
+    "photo": "https://media.licdn.com/dms/image/C4D03AQEkw7V_pSXZNA/profile-displayphoto-shrink_800_800/0/1516610639891?e=1714003200&v=beta&t=nrSUhPofyGbyqa4jVvBDmL2SZ68aOxOYZNhnraO3_o8",
     "biography": {
-      "en": "I am Jane Doe. I am an amazing speaker.",
-      "es": "Yo soy Jane Doe. Soy un gran orador."
+      "en": "Lorena Barba - Professor and Director of the Open Source Software Office at George Washington University. Mechanical Engineer with a Ph.D. in Aeronautics. Woman in STEM, referent for python community.",
+      "es": "Lorena Barba - Profesora y Líder de la Oficina para el Impulso del Software Libre en la Universidad George Washington. Ingeniera Mecánica con Doctorado en Aeronática"
     },
-    "affiliation": "Acme Inc.",
-    "facebook": "https://www.facebook.com/johndoe",
-    "twitter": "@johndoe",
-    "linkedin": "https://www.linkedin.com/in/johndoe",
-    "github": "https://github.com/janedenoe",
-    "website": "https://janedenoe.com",
-    "country_origin": "Colombia",
-    "country_residence": "Canada"
+    "affiliation": "Scientific Computing",
+    "facebook": "",
+    "twitter": "@LorenaABarba",
+    "linkedin": "https://www.linkedin.com/in/lorenabarba/",
+    "github": "https://github.com/labarba",
+    "website": "https://lorenabarba.com/",
+    "country_origin": "",
+    "country_residence": ""
   },
   {
-    "id": "jane-doe-2",
+    "id": "qumisha-goss",
     "type": "keynote",
-    "first_name": "Jane 2",
-    "last_name": "Doe",
-    "email": "bYQJ9@example.com",
-    "photo": "https://i.pravatar.cc/300",
+    "first_name": "Qumisha",
+    "last_name": "Goss",
+    "email": "qumisha@p2pu.org",
+    "photo": "https://media.licdn.com/dms/image/C5603AQHCipQEzpUqoA/profile-displayphoto-shrink_400_400/0/1644709695788?e=1714003200&v=beta&t=qPz5TUAkh0PMjcs6egnzyOrb7Q_spmtRvNG8IKEDwjM",
     "biography": {
-      "en": "I am Jane Doe. I am an amazing speaker.",
-      "es": "Yo soy Jane Doe. Soy un gran orador."
+      "en": "Qumisha Goss - Keynote speaker at PyCon USA in 2023, Interim Executive Director of Peer2Peer University. Recognized in the US Python community for her program to teach children computational thinking and programming foundations.",
+      "es": "Qumisha Goss - Keynote de PyCon USA en 2023, Directora Ejecutiva Interina de Peer2Peer University/ Reconocida en la comunidad de python de EEUU por su programa para enseñar a niños pensamiento computacional y fundamentos de programación."
     },
-    "affiliation": "Acme Inc.",
-    "facebook": "https://www.facebook.com/johndoe",
-    "twitter": "@johndoe",
-    "linkedin": "https://www.linkedin.com/in/johndoe",
-    "github": "https://github.com/janedenoe",
-    "website": "https://janedenoe.com",
-    "country_origin": "Colombia",
-    "country_residence": "Canada"
+    "affiliation": "Community (teaching kids)",
+    "facebook": "",
+    "twitter": "@QatalystGoss",
+    "linkedin": "https://www.linkedin.com/in/qumisha-goss-b3bb5470/",
+    "github": "",
+    "website": "",
+    "country_origin": "",
+    "country_residence": ""
   },
   {
-    "id": "jane-doe-3",
+    "id": "cris-ewing",
     "type": "keynote",
-    "first_name": "Jane 3",
-    "last_name": "Doe",
-    "email": "bYQJ9@example.com",
-    "photo": "https://i.pravatar.cc/300",
+    "first_name": "Cris",
+    "last_name": "Ewing",
+    "email": "cris@crisewing.com",
+    "photo": "https://media.licdn.com/dms/image/C4E03AQFegGgvCq8qYw/profile-displayphoto-shrink_800_800/0/1517696282208?e=1714003200&v=beta&t=g94EbjJzsTGuO2dWpimd2i7F63KtJ0aAjJGHWGA7wow",
     "biography": {
-      "en": "I am Jane Doe. I am an amazing speaker.",
-      "es": "Yo soy Jane Doe. Soy un gran orador."
+      "en": "Cris Ewing - Engineering Manager at Amazon Web Services (AWS), with over 20 years of experience in the Software Development Industry. Was a keynote speaker at PyCon USA in 2016.",
+      "es": "Cris Ewing - Engineering Manager en Amazon Web Services (AWS), con más de 20 años de experiencia en Industria de Desarrollo de Software, fue conferencista principal en PyCon USA en 2016."
     },
-    "affiliation": "Acme Inc.",
-    "facebook": "https://www.facebook.com/johndoe",
-    "twitter": "@johndoe",
-    "linkedin": "https://www.linkedin.com/in/johndoe",
-    "github": "https://github.com/janedenoe",
-    "website": "https://janedenoe.com",
-    "country_origin": "Colombia",
-    "country_residence": "Canada"
+    "affiliation": "Web",
+    "facebook": "",
+    "twitter": "@crisewing",
+    "linkedin": "https://www.linkedin.com/in/cewing/",
+    "github": "",
+    "website": "",
+    "country_origin": "",
+    "country_residence": ""
+  },
+  {
+    "id": "matthew-harrison",
+    "type": "keynote",
+    "first_name": "CrMatthew",
+    "last_name": "Harrisonis",
+    "email": "matthewharrison@gmail.com",
+    "photo": "https://media.licdn.com/dms/image/C4E03AQGrtr6h5eP6gA/profile-displayphoto-shrink_400_400/0/1516299286736?e=1714003200&v=beta&t=ZfX2_m2acF9DVaUdblKoP_UFYW5hmR3eoHuMF1RX5cs",
+    "biography": {
+      "en": "Matthew Harrison - Python and Data Science trainer at MetaSnake. Lecturer of different courses using python technologies. Co-chair of Utah Python.",
+      "es": "Matthew Harrison - Instructor de Python y Ciencia de Datos en MetaSnake. Conferencista de diversos cursos utilizando tecnologías de Python. Co-presidente de Utah Python."
+    },
+    "affiliation": "Data Science",
+    "facebook": "",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/panela/",
+    "github": "github.com/mattharrison",
+    "website": "https://hairysun.com/",
+    "country_origin": "",
+    "country_residence": ""
+  },
+  {
+    "id": "van-lindberg",
+    "type": "keynote",
+    "first_name": "Van",
+    "last_name": "Lindberg",
+    "email": "vlindberg@taylorenglish.com",
+    "photo": "https://media.licdn.com/dms/image/C4E03AQHgBJH4NZ0QgA/profile-displayphoto-shrink_400_400/0/1516305427242?e=1714003200&v=beta&t=dxkKVFJLm8ruchAnVEtvkXhgsHR1xblTv2lIN4dPqyU",
+    "biography": {
+      "en": "Van Lindberg: Founder/CEO at OSPOCO. Lawyer Specialist on Software and Computer Law Issues. Former General Counsel and Vice-Chairman of the Board of Directors at the Python Software Foundation.",
+      "es": "Van Lindberg: Fundador/CEO de OSPOCO. Abogado Especialista en Aspectos Legales de Software y Computación. Durante 16 años fue  Consejero General & Vice-presidente de la Mesa de Directores de la Python Software Foundation."
+    },
+    "affiliation": "PSF + Laws in Open Source",
+    "facebook": "",
+    "twitter": "@VanL",
+    "linkedin": "https://www.linkedin.com/in/vanlindberg/",
+    "github": "",
+    "website": "",
+    "country_origin": "",
+    "country_residence": ""
+  },
+  {
+    "id": "marlene-mhangami",
+    "type": "keynote",
+    "first_name": "Marlene",
+    "last_name": "Mhangami",
+    "email": "marlenemhangami@gmail.com",
+    "photo": "https://media.licdn.com/dms/image/C4D03AQHZW1SZDO2Sgg/profile-displayphoto-shrink_400_400/0/1655840314174?e=1714003200&v=beta&t=-zuVMRocrN_Sor6R22Li4iP2mMzpl4JCqOMtosFpOGQ",
+    "biography": {
+      "en": "Marlene Manghami - Computer Scientist and Molecular Biologist. Former Director (vice-chair) of the Python Software Foundation. Speaker at several PyCon around the world.",
+      "es": "Marlene Manghami - Cuenta con pregrado en Ciencias de la Computación y en Biología Molecular. Ex-Directora (vice-chair ) de la Python Software Foundation. Ponente en varias PyCon alrededor del mundo."
+    },
+    "affiliation": "PSF",
+    "facebook": "",
+    "twitter": "@marlene_zw",
+    "linkedin": "https://www.linkedin.com/in/vanlindberg/",
+    "github": "",
+    "website": "",
+    "country_origin": "",
+    "country_residence": ""
   }
 ]

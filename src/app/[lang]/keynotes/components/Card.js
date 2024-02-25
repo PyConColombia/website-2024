@@ -33,41 +33,45 @@ const Card = ({ speakerData, reverse, index }) => {
       </Col>
       <Col xs={12} md={8}>
         <Row>
-          <Col xs={12} md={{ span: 6, order: reverse ? 'last' : 'first' }}>
-            <h3>
+          <Col xs={12} md={{ span: 8, order: reverse ? 'last' : 'first' }}>
+            <h3 className={`keynote-title ${reverse ? 'text-right' : 'text-left'}`}>
               <span className="bold">
                 {speakerData.first_name} {speakerData.last_name}
               </span>
               <span className="flag"> 🇧🇪 </span>
             </h3>
           </Col>
-          <Col xs={12} md={6}>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="">
-              <div className="fa-stack">
-                <FontAwesomeIcon className="fa-stack-2x" icon={faCircle} color="white" />
-                <FontAwesomeIcon className="social-icon fa-stack-1x" icon={faXTwitter} />
-              </div>
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
-              <div className="fa-stack">
-                <FontAwesomeIcon className="fa-stack-2x" icon={faCircle} color="white" />
-                <FontAwesomeIcon className="social-icon fa-stack-1x" icon={faLinkedinIn} />
-              </div>
-            </a>
+          <Col xs={12} md={4}>
+            <div className={`social-icons ${reverse ? 'text-left' : 'text-right'}`}>
+              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="">
+                <div className="fa-stack">
+                  <FontAwesomeIcon className="fa-stack-2x" icon={faCircle} color="white" />
+                  <FontAwesomeIcon className="social-icon fa-stack-1x" icon={faXTwitter} />
+                </div>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+                <div className="fa-stack">
+                  <FontAwesomeIcon className="fa-stack-2x" icon={faCircle} color="white" />
+                  <FontAwesomeIcon className="social-icon fa-stack-1x" icon={faLinkedinIn} />
+                </div>
+              </a>
+            </div>
           </Col>
         </Row>
         <Row>
-          <p>
+          <p className={reverse ? 'text-right' : 'text-left'}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac purus nec diam laoreet
             sollicitudin. Donec euismod condimentum mauris, nec luctus nisl
           </p>
         </Row>
         <Row>
           <Col xs={12} md={{ span: 10 }}>
-            <span
-              className={`text-border ${colorBerderTextSpeaker[(index + 1) % colorBerderTextSpeaker.length]}`}>
-              <FontAwesomeIcon icon={faCalendarAlt} /> The new age in fintech | 4 Junio 2024
-            </span>
+            <div className={reverse ? 'text-left' : 'text-right'}>
+              <span
+                className={`text-border ${colorBerderTextSpeaker[(index + 1) % colorBerderTextSpeaker.length]}`}>
+                <FontAwesomeIcon icon={faCalendarAlt} /> The new age in fintech | 4 Junio 2024
+              </span>
+            </div>
           </Col>
           <Col xs={12} md={{ span: 2, order: reverse ? 'last' : 'first' }}>
             <a href={speakerData.link}>More info</a>
