@@ -21,3 +21,8 @@ export default async function Page({ params: { lang } }) {
     </>
   );
 }
+
+export const metadata = {
+  title: 'PyCon Colombia 2024',
+  description: 'Python conference in Colombia.'
+};
