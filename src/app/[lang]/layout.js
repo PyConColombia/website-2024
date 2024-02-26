@@ -8,6 +8,7 @@ import NavbarCustom from '@/app/[lang]/components/NavbarCustom';
 import { I18nContext } from '@/contexts/I18nContext';
 
 import '@/styles/styles.sass';
+import '@/node_modules/flag-icons/css/flag-icons.min.css';
 import { getI18nDictionary } from '@/data/dictionaries';
 import FooterLayout from './components/FooterLayout';
 import AlertNews from './components/alert/News';

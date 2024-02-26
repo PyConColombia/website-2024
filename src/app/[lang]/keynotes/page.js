@@ -10,7 +10,7 @@ import speakerslist from '@/data/speakers.json';
 import Card from './components/Card';
 import Title from './components/Title';
 
-const Speakers = ({ params: { lang } }) => {
+const Keynotes = ({ params: { lang } }) => {
   return (
     <section id="keynotes">
       <div className="keynotes-bg">
@@ -21,7 +21,12 @@ const Speakers = ({ params: { lang } }) => {
               (speaker, index) =>
                 speaker.type === 'keynote' && (
                   <Col xs={12} md={10} key={speaker.id}>
-                    <Card speakerData={speaker} reverse={index % 2 !== 0} index={index} />
+                    <Card
+                      speakerData={speaker}
+                      reverse={index % 2 !== 0}
+                      index={index}
+                      lang={lang}
+                    />
                   </Col>
                 )
             )}
@@ -32,10 +37,10 @@ const Speakers = ({ params: { lang } }) => {
   );
 };
 
-Speakers.propTypes = {
+Keynotes.propTypes = {
   params: propTypes.shape({
     lang: propTypes.string.isRequired
   }).isRequired
 };
 
-export default Speakers;
+export default Keynotes;
