@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import propTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
@@ -9,6 +7,13 @@ import speakerslist from '@/data/speakers.json';
 
 import Card from './components/Card';
 import Title from './components/Title';
+
+// export async function generateMetadata({ params: { lang } }, parent) {
+
+//   return {
+//     title: product.title
+//   };
+// }
 
 const Keynotes = ({ params: { lang } }) => {
   return (

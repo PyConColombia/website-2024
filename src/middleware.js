@@ -10,7 +10,8 @@ export function middleware(request) {
     (locale) =>
       pathname.startsWith(`/${locale}/`) ||
       pathname === `/${locale}` ||
-      pathname.startsWith(`/images/`)
+      pathname.startsWith(`/images/`) ||
+      pathname.startsWith(`/favicon.ico`)
   );
 
   if (pathnameHasLocale) return;
