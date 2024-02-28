@@ -17,7 +17,7 @@ const Question = () => {
             <Image
               src="/images/icons/question-button.svg"
               alt="question"
-              class="question-icon"
+              className="question-icon"
               width={40}
               height={40}
             />
@@ -69,7 +69,7 @@ const Question = () => {
             <Image
               src="/images/icons/question-button.svg"
               alt="question"
-              class="question-icon"
+              className="question-icon"
               width={40}
               height={40}
             />
@@ -102,7 +102,7 @@ const Question = () => {
             <Image
               src="/images/icons/question-button.svg"
               alt="question"
-              class="question-icon"
+              className="question-icon"
               width={40}
               height={40}
             />
@@ -139,7 +139,7 @@ const Question = () => {
             <Image
               src="/images/icons/question-button.svg"
               alt="question"
-              class="question-icon"
+              className="question-icon"
               width={40}
               height={40}
             />
