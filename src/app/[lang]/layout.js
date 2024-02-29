@@ -1,16 +1,14 @@
-'use client';
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import props from 'prop-types';
 import Head from 'next/head';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Poppins } from 'next/font/google';
+
+import I18nLayout from '@/app/[lang]/i18n-layout';
 import NavbarCustom from '@/app/[lang]/components/NavbarCustom';
-import { I18nContext } from '@/contexts/I18nContext';
 
 import '@/styles/styles.sass';
 import '@/node_modules/flag-icons/css/flag-icons.min.css';
-import { getI18nDictionary } from '@/data/dictionaries';
 import FooterLayout from './components/FooterLayout';
 import AlertNews from './components/alert/News';
 
@@ -19,19 +17,17 @@ const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700']
 });
 
+export const metadata = {
+  title: {
+    default: 'PyCon Colombia 2024',
+    template: '%s | PyCon Colombia 2024'
+  },
+  description: 'Python conference in Colombia.'
+};
+
 const Root = ({ children, params: { lang } }) => {
-  const [i18nDictionary, setI18n] = useState({});
-
-  useEffect(() => {
-    const getI18n = async () => {
-      setI18n(await getI18nDictionary(lang));
-    };
-
-    getI18n();
-  }, [lang]);
-
   return (
-    <I18nContext.Provider value={i18nDictionary}>
+    <I18nLayout params={{ lang }}>
       <html lang={lang}>
         <Head>
           <title>PyCon Colombia 2024</title>
@@ -64,7 +60,7 @@ const Root = ({ children, params: { lang } }) => {
         </body>
         <GoogleAnalytics gaId="G-RYYD6XKC7Y" />
       </html>
-    </I18nContext.Provider>
+    </I18nLayout>
   );
 };
 

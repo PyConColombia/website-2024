@@ -8,5 +8,11 @@
     "talks": "Talks",
     "team": "Team",
     "cfp": "Call for Proposals"
+  },
+  "sections": {
+    "keynotes": {
+      "title": "Keynotes",
+      "description": "We are the new voices"
+    }
   }
 }

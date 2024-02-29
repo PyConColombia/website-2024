@@ -8,5 +8,11 @@
     "talks": "Ponencias",
     "team": "Equipo",
     "cfp": "Llamado a ponentes"
+  },
+  "sections": {
+    "keynotes": {
+      "title": "Invitados Internacionales",
+      "description": "Somos las nuevas voces"
+    }
   }
 }

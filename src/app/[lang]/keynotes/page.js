@@ -1,46 +1,30 @@
-'use client';
+'use server';
 
 import React from 'react';
 import propTypes from 'prop-types';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import speakerslist from '@/data/speakers.json';
+import Keynotes from './components/Keynotes';
 
-import Card from './components/Card';
-import Title from './components/Title';
+import en from '@/data/dictionaries/en.json';
+import es from '@/data/dictionaries/es.json';
 
-const Keynotes = ({ params: { lang } }) => {
-  return (
-    <section id="keynotes">
-      <div className="keynotes-bg">
-        <Title />
-        <Container>
-          <Row className="justify-content-center">
-            {speakerslist.map(
-              (speaker, index) =>
-                speaker.type === 'keynote' && (
-                  <Col xs={12} md={10} key={speaker.id}>
-                    <Card
-                      speakerData={speaker}
-                      reverse={index % 2 !== 0}
-                      index={index}
-                      lang={lang}
-                    />
-                  </Col>
-                )
-            )}
-          </Row>
-        </Container>
-      </div>
-    </section>
-  );
+export async function generateMetadata({ params: { lang } }, parent) {
+  const dataLang = lang === 'en' ? en : es;
+  const dataSection = dataLang?.sections;
+  const keynotesData = dataSection.keynotes;
+
+  return {
+    title: keynotesData.title
+  };
+}
+
+const Page = ({ params: { lang } }) => {
+  return <Keynotes lang={lang} />;
 };
 
-Keynotes.propTypes = {
+Page.propTypes = {
   params: propTypes.shape({
-    lang: propTypes.string.isRequired
-  }).isRequired
+    lang: propTypes.string
+  })
 };
 
-export default Keynotes;
+export default Page;

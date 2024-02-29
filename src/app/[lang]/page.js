@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 import Welcome from '@/app/[lang]/components/LandingPage/Welcome';
@@ -21,8 +23,3 @@ export default async function Page({ params: { lang } }) {
     </>
   );
 }
-
-export const metadata = {
-  title: 'PyCon Colombia 2024',
-  description: 'Python conference in Colombia.'
-};
