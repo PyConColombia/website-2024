@@ -1,25 +1,25 @@
 'use client';
 
 import React from 'react';
-// import { useRouter, useSelectedLayoutSegments } from 'next/navigation';
+import { useRouter, useSelectedLayoutSegments } from 'next/navigation';
 import Link from 'next/link';
 import propTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { useI18n } from '@/contexts/I18nContext';
-// import { locales } from '@/utils/locale';
+import { locales } from '@/utils/locale';
 
 const NavbarCustom = ({ lang }) => {
   const i18nDictionary = useI18n();
-  // const router = useRouter();
-  // const urlSegments = useSelectedLayoutSegments();
+  const router = useRouter();
+  const urlSegments = useSelectedLayoutSegments();
 
-  // const onChangeLocale = (locale) => {
-  //   router.replace(`/${locale}/${urlSegments.join('/')}`);
-  // };
+  const onChangeLocale = (locale) => {
+    router.replace(`/${locale}/${urlSegments.join('/')}`);
+  };
 
   return (
     <Navbar
@@ -65,7 +65,7 @@ const NavbarCustom = ({ lang }) => {
               {i18nDictionary?.navbar?.keynotes}
             </Nav.Link>
           </Nav>
-          {/* <Nav>
+          <Nav>
             <NavDropdown title={lang} id="collapsible-nav-dropdown" onSelect={onChangeLocale}>
               {locales.map(
                 (locale) =>
@@ -76,7 +76,7 @@ const NavbarCustom = ({ lang }) => {
                   )
               )}
             </NavDropdown>
-          </Nav> */}
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
