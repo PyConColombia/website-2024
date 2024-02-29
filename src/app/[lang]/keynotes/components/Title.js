@@ -1,9 +1,10 @@
 import React from 'react';
+import propTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const Title = () => {
+const Title = ({ content }) => {
   return (
     <div className="welcome">
       <div className="welcome-bg">
@@ -12,9 +13,9 @@ const Title = () => {
             <Col xs={10} md={6}>
               <div className="title-container">
                 <h2 className="title">
-                  <span className="bold">Keynote Speakers</span>
+                  <span className="bold">{content?.title}</span>
                 </h2>
-                <p className="text">We are the new voices</p>
+                <p className="text">{content?.description}</p>
               </div>
             </Col>
           </Row>
@@ -22,6 +23,10 @@ const Title = () => {
       </div>
     </div>
   );
+};
+
+Title.propTypes = {
+  content: propTypes.object
 };
 
 export default Title;
