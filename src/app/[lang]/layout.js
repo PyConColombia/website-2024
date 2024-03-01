@@ -40,8 +40,8 @@ export const metadata = {
     images: [
       {
         url: '/images/opimage.jpeg',
-        width: 500,
-        height: 500
+        width: 200,
+        height: 200
       }
     ]
   }

@@ -27,8 +27,8 @@ export async function generateMetadata({ params: { uniquepage, lang } }, parent)
       images: [
         {
           url: `/images/keynote/${keynoteData.photo}`,
-          width: 500,
-          height: 500
+          width: 200,
+          height: 200
         }
       ]
     }
