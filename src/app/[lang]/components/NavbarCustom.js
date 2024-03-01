@@ -16,6 +16,7 @@ const NavbarCustom = ({ lang }) => {
   const i18nDictionary = useI18n();
   const router = useRouter();
   const urlSegments = useSelectedLayoutSegments();
+  const years = ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'];
 
   const onChangeLocale = (locale) => {
     router.replace(`/${locale}/${urlSegments.join('/')}`);
@@ -66,7 +67,14 @@ const NavbarCustom = ({ lang }) => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <NavDropdown title={lang} id="collapsible-nav-dropdown" onSelect={onChangeLocale}>
+            <NavDropdown title="2024" id="collapsible-nav-dropdown-year">
+              {years.map((year) => (
+                <NavDropdown.Item key={year} as={Link} href={`https://${year}.pycon.co`}>
+                  {year}
+                </NavDropdown.Item>
+              ))}
+            </NavDropdown>
+            <NavDropdown title={lang} id="collapsible-nav-dropdown-lang" onSelect={onChangeLocale}>
               {locales.map(
                 (locale) =>
                   locale !== lang && (
