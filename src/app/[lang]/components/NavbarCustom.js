@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useRouter, useSelectedLayoutSegments, usePathname } from 'next/navigation';
+import { useRouter, useSelectedLayoutSegments } from 'next/navigation';
 import Link from 'next/link';
 import propTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
@@ -16,10 +16,7 @@ const NavbarCustom = ({ lang }) => {
   const i18nDictionary = useI18n();
   const router = useRouter();
   const urlSegments = useSelectedLayoutSegments();
-  const pathname = usePathname();
   const years = ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'];
-
-  console.log(pathname);
 
   const onChangeLocale = (locale) => {
     router.replace(`/${locale}/${urlSegments.join('/')}`);
