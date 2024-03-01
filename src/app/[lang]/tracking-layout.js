@@ -5,7 +5,7 @@ import props from 'prop-types';
 
 import Hotjar from '@hotjar/browser';
 
-const therackingLayout = ({ children }) => {
+const TherackingLayout = ({ children }) => {
   useEffect(() => {
     const siteId = 3886576;
     const hotjarVersion = 6;
@@ -16,8 +16,8 @@ const therackingLayout = ({ children }) => {
   return <>{children}</>;
 };
 
-therackingLayout.propTypes = {
+TherackingLayout.propTypes = {
   children: props.node.isRequired
 };
 
-export default therackingLayout;
+export default TherackingLayout;
