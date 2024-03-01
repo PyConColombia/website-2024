@@ -3,14 +3,36 @@ import propTypes from 'prop-types';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+
 import speakerslist from '@/data/speakers.json';
 import talksList from '@/data/talks.json';
-import Avatar from '@/app/[lang]/speakers/images/avatar.jpeg';
+import en from '@/data/dictionaries/en.json';
+import es from '@/data/dictionaries/es.json';
 
 export async function generateStaticParams() {
   return speakerslist.map((p) => ({
     uniquepage: p.id.toString()
   }));
+}
+
+export async function generateMetadata({ params: { uniquepage, lang } }, parent) {
+  const dataLang = lang === 'en' ? en : es;
+  const dataSection = dataLang?.sections;
+  const keynotesData = dataSection.keynotes;
+  const keynoteData = speakerslist.find((p) => p.id.toString() === uniquepage);
+
+  return {
+    title: `${keynoteData.first_name} ${keynoteData.last_name} | ${keynotesData.title}`,
+    openGraph: {
+      images: [
+        {
+          url: `/images/keynote/${keynoteData.photo}`,
+          width: 200,
+          height: 200
+        }
+      ]
+    }
+  };
 }
 
 const Speaker = ({ params: { uniquepage, lang } }) => {
@@ -26,7 +48,12 @@ const Speaker = ({ params: { uniquepage, lang } }) => {
 
   return (
     <>
-      <Image src={Avatar} width={200} height={200} placeholder="blur" alt="Picture of the author" />
+      <Image
+        src={`/images/keynote/${speaker.photo}`}
+        width={200}
+        height={200}
+        alt="Picture of the author"
+      />
       <h1>
         {speaker.first_name} {speaker.last_name}
       </h1>

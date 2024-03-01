@@ -19,11 +19,32 @@ const poppins = Poppins({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://2024.pycon.co'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      en: '/en',
+      es: '/es'
+    }
+  },
   title: {
     default: 'PyCon Colombia 2024',
     template: '%s | PyCon Colombia 2024'
   },
-  description: 'Python conference in Colombia.'
+  description: 'Python conference in Colombia.',
+  openGraph: {
+    title: 'PyCon Colombia 2024',
+    description: 'Python conference in Colombia.',
+    type: 'website',
+    url: 'https://2024.pycon.co',
+    images: [
+      {
+        url: '/images/opimage.jpeg',
+        width: 200,
+        height: 200
+      }
+    ]
+  }
 };
 
 const Root = ({ children, params: { lang } }) => {
