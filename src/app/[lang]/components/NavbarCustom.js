@@ -16,7 +16,11 @@ const NavbarCustom = ({ lang }) => {
   const i18nDictionary = useI18n();
   const router = useRouter();
   const urlSegments = useSelectedLayoutSegments();
+<<<<<<< HEAD
   const years = ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'];
+=======
+  const years = ['2018', '2019', '2020', '2021', '2022', '2023'];
+>>>>>>> 281fcf6 (Ajustando carga de fuente)
 
   const onChangeLocale = (locale) => {
     router.replace(`/${locale}/${urlSegments.join('/')}`);
