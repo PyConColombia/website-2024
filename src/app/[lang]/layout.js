@@ -3,6 +3,7 @@ import props from 'prop-types';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 import I18nLayout from '@/app/[lang]/i18n-layout';
+import FontLayout from '@/app/[lang]/font-layout';
 import TrackingLayout from '@/app/[lang]/tracking-layout';
 import NavbarCustom from '@/app/[lang]/components/NavbarCustom';
 
@@ -10,7 +11,6 @@ import '@/node_modules/flag-icons/css/flag-icons.min.css';
 import FooterLayout from './components/FooterLayout';
 import AlertNews from './components/alert/News';
 
-import { poppins } from '@/utils/fonts';
 import '@/styles/styles.sass';
 
 export const metadata = {
@@ -47,11 +47,13 @@ const Root = ({ children, params: { lang } }) => {
     <TrackingLayout>
       <I18nLayout params={{ lang }}>
         <html lang={lang}>
-          <body className={poppins}>
-            <AlertNews />
-            <NavbarCustom lang={lang} />
-            <main>{children}</main>
-            <FooterLayout />
+          <body>
+            <FontLayout>
+              <AlertNews />
+              <NavbarCustom lang={lang} />
+              <main>{children}</main>
+              <FooterLayout />
+            </FontLayout>
           </body>
           <GoogleAnalytics gaId="G-RYYD6XKC7Y" />
         </html>
