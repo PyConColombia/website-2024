@@ -39,10 +39,16 @@ nav
     &.navbar-main
         background-color: variables.$secondary-bg-color !important
         .nav-item
-            margin-top: 8px
+            border-radius: 8px
+            margin: 8px
             padding: 16px 5px
             &.dropdown
                 margin-top: 0
+                padding: 8px 5px
+            &.active
+                color: variables.$pink !important
+            &:hover
+                background-color: variables.$purple
 
         .nav-link
             color: variables.$main-text-color !important
