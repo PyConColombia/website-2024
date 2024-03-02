@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import propTypes from 'prop-types';
 import Ratio from 'react-bootstrap/Ratio';
 import Row from 'react-bootstrap/Row';
@@ -27,22 +28,26 @@ const Card = ({ speakerData, reverse, index, lang }) => {
     <Row className="keynote-card">
       <Col xs={12} md={{ span: 4, order: reverse ? 'last' : 'first' }}>
         <Ratio aspectRatio="1x1">
-          <Image
-            className={`img-keynote ${colorBerderSpeaker[(index + 1) % colorBerderSpeaker.length]}`}
-            src={`/images/${speakerData.type}/${speakerData.photo}`}
-            alt="Keynote Image"
-            width={300}
-            height={300}
-          />
+          <Link href={`/${lang}/keynotes/${speakerData.id}`}>
+            <Image
+              className={`img-keynote ${colorBerderSpeaker[(index + 1) % colorBerderSpeaker.length]}`}
+              src={`/images/${speakerData.type}/${speakerData.photo}`}
+              alt="Keynote Image"
+              width={300}
+              height={300}
+            />
+          </Link>
         </Ratio>
       </Col>
       <Col xs={12} md={8}>
         <Row>
           <Col xs={12} md={{ span: 8, order: reverse ? 'last' : 'first' }}>
             <h3 className={`keynote-title ${reverse ? 'text-right' : 'text-left'}`}>
-              <span className="bold">
-                {speakerData.first_name} {speakerData.last_name}
-              </span>
+              <Link href={`/${lang}/keynotes/${speakerData.id}`}>
+                <span className="bold">
+                  {speakerData.first_name} {speakerData.last_name}
+                </span>
+              </Link>
               {speakerData.country_origin && (
                 <span className="flag">
                   {' '}
