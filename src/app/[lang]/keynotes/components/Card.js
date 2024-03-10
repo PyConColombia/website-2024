@@ -43,11 +43,9 @@ const Card = ({ speakerData, reverse, index, lang }) => {
         <Row>
           <Col xs={12} md={{ span: 8, order: reverse ? 'last' : 'first' }}>
             <h3 className={`keynote-title ${reverse ? 'text-right' : 'text-left'}`}>
-              <Link href={`/${lang}/keynotes/${speakerData.id}`}>
-                <span className="bold">
-                  {speakerData.first_name} {speakerData.last_name}
-                </span>
-              </Link>
+              <span className="bold">
+                {speakerData.first_name} {speakerData.last_name}
+              </span>
               {speakerData.country_origin && (
                 <span className="flag">
                   {' '}
@@ -117,19 +115,21 @@ const Card = ({ speakerData, reverse, index, lang }) => {
         <Row>
           <p className={reverse ? 'text-right' : 'text-left'}>{speakerData.biography[lang]}</p>
         </Row>
-        {/* <Row>
-          <Col xs={12} md={{ span: 10 }}>
+        <Row>
+          {/* <Col xs={12} md={{ span: 9 }}>
             <div className={reverse ? 'text-left' : 'text-right'}>
               <span
                 className={`text-border ${colorBerderTextSpeaker[(index + 1) % colorBerderTextSpeaker.length]}`}>
                 <FontAwesomeIcon icon={faCalendarAlt} /> The new age in fintech | 4 Junio 2024
               </span>
             </div>
+          </Col> */}
+          <Col xs={12} md={{ span: 3, order: reverse ? 'last' : 'first' }}>
+            <Link href={`/${lang}/keynotes/${speakerData.id}`} className="more-info">
+              More info
+            </Link>
           </Col>
-          <Col xs={12} md={{ span: 2, order: reverse ? 'last' : 'first' }}>
-            <a href={speakerData.link}>More info</a>
-          </Col>
-        </Row> */}
+        </Row>
       </Col>
     </Row>
   );
