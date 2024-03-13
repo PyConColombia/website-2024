@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import propTypes from 'prop-types';
 import Ratio from 'react-bootstrap/Ratio';
 import Row from 'react-bootstrap/Row';
@@ -15,7 +16,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 const Card = ({ speakerData, reverse, index, lang }) => {
-  const colorBerderSpeaker = ['border-pink', 'border-yellow', 'border-purple', 'border-blue'];
+  const colorBorderSpeaker = ['border-pink', 'border-yellow', 'border-purple', 'border-blue'];
   // const colorBerderTextSpeaker = [
   //   'text-border-pink',
   //   'text-border-yellow',
@@ -27,13 +28,15 @@ const Card = ({ speakerData, reverse, index, lang }) => {
     <Row className="keynote-card">
       <Col xs={12} md={{ span: 4, order: reverse ? 'last' : 'first' }}>
         <Ratio aspectRatio="1x1">
-          <Image
-            className={`img-keynote ${colorBerderSpeaker[(index + 1) % colorBerderSpeaker.length]}`}
-            src={`/images/${speakerData.type}/${speakerData.photo}`}
-            alt="Keynote Image"
-            width={300}
-            height={300}
-          />
+          <Link href={`/${lang}/keynotes/${speakerData.id}`}>
+            <Image
+              className={`img-keynote ${colorBorderSpeaker[(index + 1) % colorBorderSpeaker.length]}`}
+              src={`/images/${speakerData.type}/${speakerData.photo}`}
+              alt="Keynote Image"
+              width={300}
+              height={300}
+            />
+          </Link>
         </Ratio>
       </Col>
       <Col xs={12} md={8}>
@@ -112,19 +115,21 @@ const Card = ({ speakerData, reverse, index, lang }) => {
         <Row>
           <p className={reverse ? 'text-right' : 'text-left'}>{speakerData.biography[lang]}</p>
         </Row>
-        {/* <Row>
-          <Col xs={12} md={{ span: 10 }}>
+        <Row>
+          {/* <Col xs={12} md={{ span: 9 }}>
             <div className={reverse ? 'text-left' : 'text-right'}>
               <span
                 className={`text-border ${colorBerderTextSpeaker[(index + 1) % colorBerderTextSpeaker.length]}`}>
                 <FontAwesomeIcon icon={faCalendarAlt} /> The new age in fintech | 4 Junio 2024
               </span>
             </div>
+          </Col> */}
+          <Col xs={12} md={{ span: 3, order: reverse ? 'last' : 'first' }}>
+            <Link href={`/${lang}/keynotes/${speakerData.id}`} className="more-info">
+              More info
+            </Link>
           </Col>
-          <Col xs={12} md={{ span: 2, order: reverse ? 'last' : 'first' }}>
-            <a href={speakerData.link}>More info</a>
-          </Col>
-        </Row> */}
+        </Row>
       </Col>
     </Row>
   );
@@ -132,6 +137,7 @@ const Card = ({ speakerData, reverse, index, lang }) => {
 
 Card.propTypes = {
   speakerData: propTypes.shape({
+    id: propTypes.string,
     first_name: propTypes.string,
     last_name: propTypes.string,
     biography: propTypes.shape({}),
