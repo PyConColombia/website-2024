@@ -22,14 +22,17 @@ export async function generateMetadata({ params: { uniquepage, lang } }, parent)
 
   return {
     title: `${keynoteData.first_name} ${keynoteData.last_name} | ${keynotesData.title}`,
+    description: `${keynoteData.biography[lang]}`,
     openGraph: {
+      title: `${keynoteData.first_name} ${keynoteData.last_name} | ${keynotesData.title}`,
       images: [
         {
           url: `/images/keynote/${keynoteData.photo}`,
           width: 200,
           height: 200
         }
-      ]
+      ],
+      description: `${keynoteData.biography[lang]}`
     }
   };
 }
