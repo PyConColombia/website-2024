@@ -16,7 +16,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 const Card = ({ speakerData, reverse, index, lang }) => {
-  const colorBerderSpeaker = ['border-pink', 'border-yellow', 'border-purple', 'border-blue'];
+  const colorBorderSpeaker = ['border-pink', 'border-yellow', 'border-purple', 'border-blue'];
   // const colorBerderTextSpeaker = [
   //   'text-border-pink',
   //   'text-border-yellow',
@@ -30,7 +30,7 @@ const Card = ({ speakerData, reverse, index, lang }) => {
         <Ratio aspectRatio="1x1">
           <Link href={`/${lang}/keynotes/${speakerData.id}`}>
             <Image
-              className={`img-keynote ${colorBerderSpeaker[(index + 1) % colorBerderSpeaker.length]}`}
+              className={`img-keynote ${colorBorderSpeaker[(index + 1) % colorBorderSpeaker.length]}`}
               src={`/images/${speakerData.type}/${speakerData.photo}`}
               alt="Keynote Image"
               width={300}
@@ -137,6 +137,7 @@ const Card = ({ speakerData, reverse, index, lang }) => {
 
 Card.propTypes = {
   speakerData: propTypes.shape({
+    id: propTypes.string,
     first_name: propTypes.string,
     last_name: propTypes.string,
     biography: propTypes.shape({}),
