@@ -1,95 +1,148 @@
 @use "../variables"
 
 #keynotes
-  color: variables.$main-text-color
-  background-color: variables.$main-bg-color
+    color: variables.$main-text-color
+    background-color: variables.$main-bg-color
 
-  .keynotes-bg
-    background-image: url("/images/keynote/background.svg")
-    background-size: inherit
-    background-repeat: repeat-y
-    font-size: 20px
-
-    .welcome
-      background-color: transparent
-      padding: 100px 0
-
-      .text
-        font-size: 23px
-        line-height: 35px
-        font-weight: 400
-
-    .keynote-card
-      align-items: center
-      margin: 40px 0
-
-      .keynote-title
-        margin: 20px 0
-
-      p
-        color: variables.$secondary-text-color
-        font-weight: 400
-        line-height: 30px
-
-      .img-keynote
-        width: 95%
-        height: auto
-        border-radius: 100%
-
-        @media (max-width: 768px)
-          width: 100%
-
-      .card-reverse
-        flex-direction: row-reverse
-
-      .items-reverse
-        flex-direction: row-reverse
-
-      .text-right
-        text-align: right
-
-      .text-border
-        border-radius: 13px
+    .keynotes-bg
+        background-image: url("/images/keynote/background.svg")
+        background-size: inherit
+        background-repeat: repeat-y
         font-size: 20px
-        font-style: normal
-        font-weight: 400
-        line-height: 31px
-        margin: 40px auto
-        padding: 5px 25px
 
-      .social-icons
-        margin: 15px 0
-        .social-icon
-          color: variables.$main-bg-color
+        .welcome
+            background-color: transparent
+            padding: 100px 0
+
+        .text
+            font-size: 23px
+            line-height: 35px
+            font-weight: 400
+
+        .keynote-card
+            align-items: center
+            margin: 40px 0
+
+        .keynote-title
+            margin: 20px 0
+
+        .more-info
+            color: variables.$fuchsia
+            font-size: 25px
+            &:hover
+                text-decoration: none
+
+        p
+            color: variables.$secondary-text-color
+            font-weight: 400
+            line-height: 30px
+
+        .img-keynote
+            width: 95%
+            height: auto
+            border-radius: 100%
+
+            @media (max-width: 768px)
+                width: 100%
+
+        .card-reverse
+            flex-direction: row-reverse
+
+        .items-reverse
+            flex-direction: row-reverse
+
+        .text-right
+            text-align: right
+
+        .text-border
+            border-radius: 13px
+            font-size: 20px
+            font-style: normal
+            font-weight: 400
+            line-height: 31px
+            margin: 40px auto
+            padding: 5px 25px
+
+        .social-icons
+            margin: 15px 0
+            .social-icon
+                color: variables.$main-bg-color
+                &:hover
+                    color: variables.$fuchsia
+                    cursor: pointer
+
+#keynote
+    color: variables.$main-text-color
+    background-color: variables.$main-bg-color
+
+    .keynote-bg
+        background-image: url("/images/keynote/background.svg")
+        background-size: inherit
+        background-repeat: repeat-y
+        font-size: 20px
+        padding: 100px 0
+        text-align: center
+
+        .image-wrapper
+            padding: 40px 0
+            .img-keynote
+                width: 95%
+                max-width: 300px
+                height: auto
+                border-radius: 100%
+
+                @media (max-width: 768px)
+                    width: 100%
+
+        .name
+            padding: 10px 0
+
+        .biography
+            padding: 20px 0 40px 0
+
+        .text-border
+            border-radius: 13px
+            font-size: 20px
+            font-style: normal
+            font-weight: 400
+            line-height: 31px
+            padding: 5px 25px
+
+        .social-icons
+            .social-icon
+                color: variables.$main-bg-color
+                &:hover
+                    color: variables.$fuchsia
+                    cursor: pointer
 
 // Colors
 .pink
-  color: variables.$border-pink
+    color: variables.$border-pink
 .blue
-  color: variables.$border-blue
+    color: variables.$border-blue
 .yellow
-  color: variables.$border-yellow
+    color: variables.$border-yellow
 .purple
-  color: variables.$border-purple
+    color: variables.$border-purple
 
 .border-pink
-  border: 30px solid variables.$border-pink
+    border: 30px solid variables.$border-pink
 .border-blue
-  border: 30px solid variables.$border-blue
+    border: 30px solid variables.$border-blue
 .border-yellow
-  border: 30px solid variables.$border-yellow
+    border: 30px solid variables.$border-yellow
 .border-purple
-  border: 30px solid variables.$border-purple
+    border: 30px solid variables.$border-purple
 
 .text-border-pink
-  border: 1px solid variables.$border-pink
-  color: variables.$border-pink
+    border: 1px solid variables.$border-pink
+    color: variables.$border-pink
 .text-border-blue
-  border: 1px solid variables.$border-blue
-  color: variables.$border-blue
+    border: 1px solid variables.$border-blue
+    color: variables.$border-blue
 .text-border-yellow
-  border: 1px solid variables.$border-yellow
-  color: variables.$border-yellow
+    border: 1px solid variables.$border-yellow
+    color: variables.$border-yellow
 .text-border-purple
-  border: 1px solid variables.$border-purple
-  color: variables.$border-purple
+    border: 1px solid variables.$border-purple
+    color: variables.$border-purple
