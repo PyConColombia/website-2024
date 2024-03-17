@@ -65,6 +65,9 @@ const NavbarCustom = ({ lang }) => {
             <Nav.Link as={Link} href={`/${lang}/keynotes`} className="nav-item">
               {i18nDictionary?.navbar?.keynotes}
             </Nav.Link>
+            <Nav.Link as={Link} href={`/${lang}/sponsors`} className="nav-item">
+              {i18nDictionary?.navbar?.sponsors}
+            </Nav.Link>
           </Nav>
           <Nav>
             <NavDropdown title="2024" id="collapsible-nav-dropdown-year">

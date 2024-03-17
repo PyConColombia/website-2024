@@ -8,6 +8,7 @@ import Welcome from '@/app/[lang]/components/LandingPage/Welcome';
 import Contact from '@/app/[lang]/components/LandingPage/Contact';
 import Keynotes from '@/app/[lang]/keynotes/page';
 import CallSpeakers from '@/app/[lang]/components/commons/CallSpeakers';
+import Sponsors from '@/app/[lang]/sponsors/page';
 // import Speakers from '@/components/LandingPage/Speakers';
 
 export default async function Page({ params: { lang } }) {
@@ -19,6 +20,7 @@ export default async function Page({ params: { lang } }) {
       <Sponsors /> */}
       <Keynotes params={{ lang }} />
       <CallSpeakers />
+      <Sponsors params={{ lang }} />
       <Contact />
     </>
   );
