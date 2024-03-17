@@ -25,7 +25,7 @@ const Title = () => {
                     now. Don&apos;t miss the opportunity to share your insights
                   </p>
                   <span className="closes-date">
-                    <FontAwesomeIcon icon={faCalendar} /> Closes at March 11th 2024
+                    <FontAwesomeIcon icon={faCalendar} /> Closes at April 1st 2024
                   </span>
                 </div>
               </Col>
