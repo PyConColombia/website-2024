@@ -4,8 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const Sponsor = ({ level, sponsorData }) => {
-  console.log(sponsorData);
-
   return (
     <div className="card-sponsor">
       <Row>
