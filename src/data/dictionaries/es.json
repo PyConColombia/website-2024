@@ -6,6 +6,7 @@
     "schedule": "Cronograma",
     "speakers": "Ponentes",
     "talks": "Ponencias",
+    "sponsors": "Patrocinadores",
     "team": "Equipo",
     "cfp": "Llamado a ponentes"
   },
@@ -13,6 +14,10 @@
     "keynotes": {
       "title": "Invitados Internacionales",
       "description": "Somos las nuevas voces"
+    },
+    "sponsors": {
+      "title": "Sponsors",
+      "description": "PyCon Colombia can be your platform to gain brand recognition, take leads and recruit from an audience of highly skilled professionals!"
     }
   }
 }

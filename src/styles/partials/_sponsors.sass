@@ -1,0 +1,44 @@
+@use "../variables"
+
+#sponsors
+    color: variables.$main-text-color
+    background-color: variables.$main-bg-color
+
+    .content-wrapper
+        background-color: variables.$quaternary-bg-color
+        color: variables.$third-text-color
+        padding: 60px 0
+
+        .title-sponsors
+            font-weight: 600
+
+        .description-sponsors
+            font-size: 20px
+            font-weight: 400
+            line-height: 30px
+            margin: 30px 0
+
+        .card-sponsor
+            margin: 30px 0
+            .badge
+                border: 1px solid variables.$black
+                border-radius: 60px
+                color: variables.$main-text-color
+                font-size: 18px
+                font-weight: 500
+                letter-spacing: 5px
+                padding: 10px 20px
+                text-transform: uppercase
+                &.gold
+                    background-image: linear-gradient(to bottom right, #FFDE8C,#E7B12D, #F6C651,)
+                    color: variables.$third-text-color
+                &.silver
+                    background-image: linear-gradient(to bottom right, #CEE0FB, #8CB6F3, #8CB6F3)
+                    color: variables.$third-text-color
+                &.bronze
+                    background-image: linear-gradient(to bottom right, #FF8C8B, #FF7372, #FF7372)
+                    color: variables.$third-text-color
+
+            .separator
+                border-top: 1px solid variables.$black
+                color: variables.$black
