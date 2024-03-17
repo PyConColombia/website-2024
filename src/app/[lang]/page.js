@@ -14,7 +14,7 @@ import Sponsors from '@/app/[lang]/sponsors/page';
 export default async function Page({ params: { lang } }) {
   return (
     <>
-      <Welcome />
+      <Welcome params={{ lang }} />
       {/* <Technologies />
       <Speakers />
       <Sponsors /> */}

@@ -11,9 +11,30 @@
     "cfp": "Call for Proposals"
   },
   "sections": {
+    "index": {
+      "date": "June 7 to 9, 2024",
+      "location": "Medellin - Colombia",
+      "subtitle_1": "Ready to journey back in time",
+      "subtitle_2": "while building the future?",
+      "tickets_button": "Get your tickets"
+    },
     "keynotes": {
       "title": "Keynotes",
-      "description": "We are the new voices"
+      "description": "We are the new voices",
+      "more_info": "More Info"
+    },
+    "call_for_speakers": {
+      "title": "Call for proposals",
+      "description": "Calling on all Python enthusiasts! Submit your proposals for PyCon Colombia 2024 now. Don&apos;t miss the opportunity to share your insights",
+      "closes_date": "Closes at April 1st 2024",
+      "topics_description_1": "We welcome a diverse range of proposals related to various technical topics. Share your expertise on any of the following subjects:",
+      "topics_description_2": "Also you can talk about other general topics:",
+      "content": {
+        "description": "We are inviting all the Python Community to submit proposals to PyCon Colombia 2024, don't hesitate to submit yours! or, if you know somebody who you think should be speaking at PyCon Colombia, please send them this",
+        "url_label": "Link",
+        "date_text": "This CFP closes at",
+        "date": "April 1st, 2024"
+      }
     },
     "sponsors": {
       "title": "Sponsors",

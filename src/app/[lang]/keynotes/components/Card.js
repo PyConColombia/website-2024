@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import propTypes from 'prop-types';
@@ -5,6 +7,8 @@ import Ratio from 'react-bootstrap/Ratio';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'next/image';
+
+import { useI18n } from '@/contexts/I18nContext';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faGlobe } from '@fortawesome/free-solid-svg-icons';
@@ -16,6 +20,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 const Card = ({ speakerData, reverse, index, lang }) => {
+  const i18nDictionary = useI18n();
+  const sectionData = i18nDictionary?.sections?.keynotes;
   const colorBorderSpeaker = ['border-pink', 'border-yellow', 'border-purple', 'border-blue'];
   // const colorBerderTextSpeaker = [
   //   'text-border-pink',
@@ -126,7 +132,7 @@ const Card = ({ speakerData, reverse, index, lang }) => {
           </Col> */}
           <Col xs={12} md={{ span: 3, order: reverse ? 'last' : 'first' }}>
             <Link href={`/${lang}/keynotes/${speakerData.id}`} className="more-info">
-              More info
+              {sectionData?.more_info}
             </Link>
           </Col>
         </Row>

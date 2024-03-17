@@ -1,10 +1,17 @@
+'use client';
+
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Question from './Question';
 
+import { useI18n } from '@/contexts/I18nContext';
+
 const Content = () => {
+  const i18nDictionary = useI18n();
+  const sectionData = i18nDictionary?.sections?.call_for_speakers?.content;
+
   return (
     <div className="call-for-proposals">
       <div className="content">
@@ -12,18 +19,16 @@ const Content = () => {
           <Row className="justify-content-center">
             <Col xs={12} md={10}>
               <p>
-                We are inviting all the Python Community to submit proposals to PyCon Colombia 2024,
-                don&apos;t hesitate to submit yours! or, if you know somebody who you think should
-                be speaking at PyCon Colombia, please send them this{' '}
+                {sectionData?.description}{' '}
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSelYKA6txm_uTmpgqydOYw27uKwaY701Vy4qJac1NCzYFq7Ow/viewform"
                   target="blank_">
-                  Link
+                  {sectionData?.url_label}
                 </a>
               </p>
               <br />
               <p>
-                This CFP closes at <b>April 1st 2024</b>.
+                {sectionData?.date_text} <b>{sectionData?.date}</b>.
               </p>
             </Col>
           </Row>

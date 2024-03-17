@@ -11,9 +11,30 @@
     "cfp": "Llamado a ponentes"
   },
   "sections": {
+    "index": {
+      "date": "Del 7 al 9 de Junio",
+      "location": "Medellín - Colombia",
+      "subtitle_1": "¿Listo para viajar en el tiempo",
+      "subtitle_2": "mientras construyes el futuro?",
+      "tickets_button": "Consigue tus entradas"
+    },
     "keynotes": {
       "title": "Invitados Internacionales",
-      "description": "Somos las nuevas voces"
+      "description": "Somos las nuevas voces",
+      "more_info": "Más info"
+    },
+    "call_for_speakers": {
+      "title": "Convocatoria de propuestas",
+      "description": "¡Llamado a todos los entusiastas de Python! Envía ahora tus propuestas para PyCon Colombia 2024. No pierdas la oportunidad de compartir tus conocimientos",
+      "closes_date": "Cierra el 1 de Abril de 2024",
+      "topics_description_1": "Acogemos con satisfacción una amplia gama de propuestas relacionadas con diversos temas técnicos. Comparta sus conocimientos sobre cualquiera de los siguientes temas:",
+      "topics_description_2": "También puede hablar de otros temas generales:",
+      "content": {
+        "description": "Estamos invitando a toda la Comunidad Python a presentar propuestas para PyCon Colombia 2024, ¡no dudes en enviar la tuya! o, si conoces a alguien que crees que debería hablar en PyCon Colombia, por favor envíale este",
+        "url_label": "Enlace",
+        "date_text": "Este CFP cierra el",
+        "date": "1 de Abril de 2024"
+      }
     },
     "sponsors": {
       "title": "Patrocinadores",

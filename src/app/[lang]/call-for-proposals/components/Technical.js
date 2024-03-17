@@ -1,17 +1,23 @@
+'use client';
+
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'next/image';
 
+import { useI18n } from '@/contexts/I18nContext';
+
 const Technical = () => {
+  const i18nDictionary = useI18n();
+  const sectionData = i18nDictionary?.sections?.call_for_speakers;
+
   return (
     <section id="technical">
       <Container>
         <Row className="justify-content-center">
           <Col xs={10} md={8}>
-            We welcome a diverse range of proposals related to various technical topics. Share your
-            expertise on any of the following subjects:
+            {sectionData?.topics_description_1}
           </Col>
           <Col xs={12}>
             <div className="list">
