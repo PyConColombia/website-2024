@@ -29,6 +29,12 @@
                 letter-spacing: 5px
                 padding: 10px 20px
                 text-transform: uppercase
+                &.diamond
+                    background-image: linear-gradient(to bottom right, #b9f2ff, #b9f2ff, #b9f2ff)
+                    color: variables.$third-text-color
+                &.platinum
+                    background-image: linear-gradient(to bottom right, #E5E4E2, #E5E4E2, #E5E4E2)
+                    color: variables.$third-text-color
                 &.gold
                     background-image: linear-gradient(to bottom right, #FFDE8C,#E7B12D, #F6C651,)
                     color: variables.$third-text-color
@@ -42,3 +48,14 @@
             .separator
                 border-top: 1px solid variables.$black
                 color: variables.$black
+
+            .sponsor-container
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                padding: 20px 0
+
+                .img-sponsor
+                    width: 100%
+                    height: auto

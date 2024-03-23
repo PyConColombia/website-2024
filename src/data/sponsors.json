@@ -1,20 +1,19 @@
 {
+  "diamond": [
+    {
+      "name": "Nearsure",
+      "image": "nearsure.svg",
+      "url": "https://nearsure.com/"
+    }
+  ],
+  "platinum": [],
   "gold": [
     {
-      "name": "Test",
-      "image": ""
+      "name": "Elastic",
+      "image": "elastic.svg",
+      "url": "https://www.elastic.co/"
     }
   ],
-  "silver": [
-    {
-      "name": "",
-      "image": ""
-    }
-  ],
-  "bronze": [
-    {
-      "name": "",
-      "image": ""
-    }
-  ]
+  "silver": [],
+  "bronze": []
 }
