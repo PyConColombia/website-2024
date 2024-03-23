@@ -14,11 +14,19 @@ const Sponsor = ({ level, sponsorData }) => {
     bronze: '4'
   };
 
+  const sponsorSizeSmall = {
+    diamond: '12',
+    platinum: '6',
+    gold: '4',
+    silver: '3',
+    bronze: '2'
+  };
+
   return (
-    <Row>
-      <Col xs={12} md={sponsorSize[level]}>
+    <Row className="justify-content-center">
+      <Col xs={sponsorSizeSmall[level]} md={sponsorSize[level]}>
         <div className="sponsor-container">
-          <Link href={sponsorData.url || ''} target="_blank">
+          <Link href={sponsorData.url || ''} target="_blank" className="link-sponsor">
             <Image
               className="img-sponsor"
               src={`/images/sponsor/${sponsorData.image}`}
