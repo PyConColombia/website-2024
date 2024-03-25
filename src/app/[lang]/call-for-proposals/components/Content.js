@@ -23,7 +23,7 @@ const Content = () => {
               </p>
               <br />
               <p>
-                This CFP closes at <b>March 11th 2024</b>.
+                This CFP closes at <b>April 1st 2024</b>.
               </p>
             </Col>
           </Row>
